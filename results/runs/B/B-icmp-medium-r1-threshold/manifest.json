@@ -1,0 +1,49 @@
+{
+  "run_id": "B-icmp-medium-r1-threshold",
+  "seed": 5071,
+  "condition": "icmp-medium",
+  "rep": 1,
+  "mode": "threshold",
+  "attack": {
+    "type": "icmp",
+    "pps": 500
+  },
+  "benign_load": "medium",
+  "link_profile": "default",
+  "link": {
+    "bw": 10,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "threshold",
+    "shadow": true
+  },
+  "status": "done",
+  "attacks": [
+    {
+      "host": "a1",
+      "ip": "10.0.0.201",
+      "start": 1793194417.2120886,
+      "end": 1793194447.1216154
+    },
+    {
+      "host": "a2",
+      "ip": "10.0.0.202",
+      "start": 1793194417.3558302,
+      "end": 1793194447.1216297
+    },
+    {
+      "host": "a3",
+      "ip": "10.0.0.203",
+      "start": 1793194417.5117733,
+      "end": 1793194447.1216357
+    }
+  ],
+  "t0": 1793194407.1214952,
+  "t_end": 1793194468.121655
+}

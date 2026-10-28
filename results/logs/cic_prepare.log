@@ -1,0 +1,19 @@
+{'day': '01-12', 'file': '01-12/DrDoS_DNS.csv', 'rows_in': 5074413, 'benign_kept': 3402, 'attack_kept': 44707, 'attack_keep_prob': 0.008812604864490009}
+{'day': '01-12', 'file': '01-12/DrDoS_LDAP.csv', 'rows_in': 2181542, 'benign_kept': 1612, 'attack_kept': 45137, 'attack_keep_prob': 0.020494879900968564}
+{'day': '01-12', 'file': '01-12/DrDoS_MSSQL.csv', 'rows_in': 4524498, 'benign_kept': 2006, 'attack_kept': 45023, 'attack_keep_prob': 0.009951398239100928}
+{'day': '01-12', 'file': '01-12/DrDoS_NTP.csv', 'rows_in': 1217007, 'benign_kept': 14365, 'attack_kept': 35032, 'attack_keep_prob': 0.02914689792526582}
+{'day': '01-12', 'file': '01-12/DrDoS_NetBIOS.csv', 'rows_in': 4094986, 'benign_kept': 1707, 'attack_kept': 45687, 'attack_keep_prob': 0.011075242061094323}
+{'day': '01-12', 'file': '01-12/DrDoS_SNMP.csv', 'rows_in': 5161377, 'benign_kept': 1507, 'attack_kept': 44483, 'attack_keep_prob': 0.008653306944214614}
+{'day': '01-12', 'file': '01-12/DrDoS_SSDP.csv', 'rows_in': 2611374, 'benign_kept': 763, 'attack_kept': 39010, 'attack_keep_prob': 0.015007748720192475}
+{'day': '01-12', 'file': '01-12/DrDoS_UDP.csv', 'rows_in': 3136802, 'benign_kept': 2157, 'attack_kept': 39118, 'attack_keep_prob': 0.012483073392375477}
+{'day': '01-12', 'file': '01-12/Syn.csv', 'rows_in': 1582681, 'benign_kept': 392, 'attack_kept': 46449, 'attack_keep_prob': 0.029498889482139103}
+{'day': '01-12', 'file': '01-12/TFTP.csv', 'rows_in': 20107827, 'benign_kept': 25247, 'attack_kept': 40725, 'attack_keep_prob': 0.0020210683224925387}
+{'day': '01-12', 'file': '01-12/UDPLag.csv', 'rows_in': 370605, 'benign_kept': 3705, 'attack_kept': 43833, 'attack_keep_prob': 0.11901086524887167}
+{'day': '03-11', 'file': '03-11/LDAP.csv', 'rows_in': 2113234, 'benign_kept': 5124, 'attack_kept': 45132, 'attack_keep_prob': 0.021574504640364953}
+{'day': '03-11', 'file': '03-11/MSSQL.csv', 'rows_in': 5775786, 'benign_kept': 2794, 'attack_kept': 45661, 'attack_keep_prob': 0.007878552191721275}
+{'day': '03-11', 'file': '03-11/NetBIOS.csv', 'rows_in': 3455899, 'benign_kept': 1321, 'attack_kept': 46042, 'attack_keep_prob': 0.013253734739421583}
+{'day': '03-11', 'file': '03-11/Portmap.csv', 'rows_in': 191694, 'benign_kept': 4734, 'attack_kept': 44639, 'attack_keep_prob': 0.23915203810964053}
+{'day': '03-11', 'file': '03-11/Syn.csv', 'rows_in': 4320541, 'benign_kept': 35790, 'attack_kept': 42866, 'attack_keep_prob': 0.010013997944515064}
+{'day': '03-11', 'file': '03-11/UDP.csv', 'rows_in': 3782206, 'benign_kept': 3134, 'attack_kept': 39483, 'attack_keep_prob': 0.010486405808940481}
+{'day': '03-11', 'file': '03-11/UDPLag.csv', 'rows_in': 725165, 'benign_kept': 4068, 'attack_kept': 42466, 'attack_keep_prob': 0.05878795258362623}
+wrote 889321 rows to data/cic/cic_sample.parquet

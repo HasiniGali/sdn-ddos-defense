@@ -1,0 +1,49 @@
+{
+  "run_id": "B-udp-high-r2-threshold",
+  "seed": 5052,
+  "condition": "udp-high",
+  "rep": 2,
+  "mode": "threshold",
+  "attack": {
+    "type": "udp",
+    "pps": 5000
+  },
+  "benign_load": "medium",
+  "link_profile": "default",
+  "link": {
+    "bw": 10,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "threshold",
+    "shadow": true
+  },
+  "status": "done",
+  "attacks": [
+    {
+      "host": "a1",
+      "ip": "10.0.0.201",
+      "start": 1793193738.7845306,
+      "end": 1793193768.6652474
+    },
+    {
+      "host": "a2",
+      "ip": "10.0.0.202",
+      "start": 1793193738.8287709,
+      "end": 1793193768.6652846
+    },
+    {
+      "host": "a3",
+      "ip": "10.0.0.203",
+      "start": 1793193739.0206618,
+      "end": 1793193768.6652987
+    }
+  ],
+  "t0": 1793193728.6637275,
+  "t_end": 1793193785.6645374
+}

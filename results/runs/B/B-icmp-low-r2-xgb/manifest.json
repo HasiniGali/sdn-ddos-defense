@@ -1,0 +1,49 @@
+{
+  "run_id": "B-icmp-low-r2-xgb",
+  "seed": 5062,
+  "condition": "icmp-low",
+  "rep": 2,
+  "mode": "xgb",
+  "attack": {
+    "type": "icmp",
+    "pps": 50
+  },
+  "benign_load": "medium",
+  "link_profile": "default",
+  "link": {
+    "bw": 10,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "xgb",
+    "shadow": true
+  },
+  "status": "done",
+  "attacks": [
+    {
+      "host": "a1",
+      "ip": "10.0.0.201",
+      "start": 1793194831.2589464,
+      "end": 1793194861.018338
+    },
+    {
+      "host": "a2",
+      "ip": "10.0.0.202",
+      "start": 1793194831.4997277,
+      "end": 1793194861.01835
+    },
+    {
+      "host": "a3",
+      "ip": "10.0.0.203",
+      "start": 1793194831.6471453,
+      "end": 1793194861.0183554
+    }
+  ],
+  "t0": 1793194821.0182567,
+  "t_end": 1793194882.0183344
+}

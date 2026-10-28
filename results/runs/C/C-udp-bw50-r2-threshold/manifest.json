@@ -1,0 +1,49 @@
+{
+  "run_id": "C-udp-bw50-r2-threshold",
+  "seed": 7052,
+  "condition": "udp-bw50",
+  "rep": 2,
+  "mode": "threshold",
+  "attack": {
+    "type": "udp",
+    "pps": 500
+  },
+  "benign_load": "medium",
+  "link_profile": "bw50",
+  "link": {
+    "bw": 50,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "threshold",
+    "shadow": true
+  },
+  "status": "done",
+  "attacks": [
+    {
+      "host": "a1",
+      "ip": "10.0.0.201",
+      "start": 1793196652.1563418,
+      "end": 1793196681.8760698
+    },
+    {
+      "host": "a2",
+      "ip": "10.0.0.202",
+      "start": 1793196652.3514795,
+      "end": 1793196681.8760893
+    },
+    {
+      "host": "a3",
+      "ip": "10.0.0.203",
+      "start": 1793196652.5578642,
+      "end": 1793196681.876097
+    }
+  ],
+  "t0": 1793196641.875928,
+  "t_end": 1793196702.8760207
+}

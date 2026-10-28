@@ -1,0 +1,49 @@
+{
+  "run_id": "B-syn-high-r0-dt",
+  "seed": 5020,
+  "condition": "syn-high",
+  "rep": 0,
+  "mode": "dt",
+  "attack": {
+    "type": "syn",
+    "pps": 5000
+  },
+  "benign_load": "medium",
+  "link_profile": "default",
+  "link": {
+    "bw": 10,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "dt",
+    "shadow": true
+  },
+  "status": "done",
+  "attacks": [
+    {
+      "host": "a1",
+      "ip": "10.0.0.201",
+      "start": 1793192222.6680222,
+      "end": 1793192252.4101453
+    },
+    {
+      "host": "a2",
+      "ip": "10.0.0.202",
+      "start": 1793192222.8451285,
+      "end": 1793192252.4101567
+    },
+    {
+      "host": "a3",
+      "ip": "10.0.0.203",
+      "start": 1793192223.0155816,
+      "end": 1793192252.4101622
+    }
+  ],
+  "t0": 1793192212.4100406,
+  "t_end": 1793192269.4101858
+}

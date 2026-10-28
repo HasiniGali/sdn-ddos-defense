@@ -1,0 +1,49 @@
+{
+  "run_id": "B-icmp-low-r3-none",
+  "seed": 5063,
+  "condition": "icmp-low",
+  "rep": 3,
+  "mode": "none",
+  "attack": {
+    "type": "icmp",
+    "pps": 50
+  },
+  "benign_load": "medium",
+  "link_profile": "default",
+  "link": {
+    "bw": 10,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "none",
+    "shadow": true
+  },
+  "status": "done",
+  "attacks": [
+    {
+      "host": "a1",
+      "ip": "10.0.0.201",
+      "start": 1793193487.2975576,
+      "end": 1793193517.091352
+    },
+    {
+      "host": "a2",
+      "ip": "10.0.0.202",
+      "start": 1793193487.3307061,
+      "end": 1793193517.0913744
+    },
+    {
+      "host": "a3",
+      "ip": "10.0.0.203",
+      "start": 1793193487.4769878,
+      "end": 1793193517.0913868
+    }
+  ],
+  "t0": 1793193477.0903115,
+  "t_end": 1793193534.0904276
+}

@@ -1,0 +1,26 @@
+{
+  "run_id": "C-udp-loadhigh-r2-none",
+  "seed": 7042,
+  "condition": "udp-loadhigh",
+  "rep": 2,
+  "mode": "none",
+  "attack": {
+    "type": "udp",
+    "pps": 500
+  },
+  "benign_load": "high",
+  "link_profile": "default",
+  "link": {
+    "bw": 10,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "none",
+    "shadow": true
+  }
+}

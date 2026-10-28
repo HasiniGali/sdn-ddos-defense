@@ -1,0 +1,5 @@
+t,event,src,dpid,detector,score,attribution
+1793195576.596,block,10.0.0.2,1,threshold,361.252,"[[""pps"", 189.77224079592511], [""bps"", 0.0], [""avg_pkt_size"", 0.0], [""n_flows"", 0.0], [""n_dst"", 0.0]]"
+1793195586.604,unblock,10.0.0.2,1,threshold,1.49905,
+1793195598.616,block,10.0.0.2,1,threshold,738.604,"[[""pps"", 567.1236227627118], [""bps"", 0.0], [""avg_pkt_size"", 0.0], [""n_flows"", 0.0], [""n_dst"", 0.0]]"
+1793195618.629,unblock,10.0.0.2,1,threshold,0.99798,

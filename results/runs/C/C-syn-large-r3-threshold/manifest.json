@@ -1,0 +1,55 @@
+{
+  "run_id": "C-syn-large-r3-threshold",
+  "seed": 7033,
+  "condition": "syn-large",
+  "rep": 3,
+  "mode": "threshold",
+  "attack": {
+    "type": "syn",
+    "pps": 500
+  },
+  "benign_load": "medium",
+  "link_profile": "default",
+  "link": {
+    "bw": 10,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "large",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "threshold",
+    "shadow": true
+  },
+  "status": "done",
+  "attacks": [
+    {
+      "host": "a1",
+      "ip": "10.0.0.201",
+      "start": 1793196820.3803935,
+      "end": 1793196850.1431308
+    },
+    {
+      "host": "a2",
+      "ip": "10.0.0.202",
+      "start": 1793196820.3830605,
+      "end": 1793196850.1431496
+    },
+    {
+      "host": "a3",
+      "ip": "10.0.0.203",
+      "start": 1793196820.6818447,
+      "end": 1793196850.1431556
+    },
+    {
+      "host": "a4",
+      "ip": "10.0.0.204",
+      "start": 1793196820.861102,
+      "end": 1793196850.143161
+    }
+  ],
+  "t0": 1793196810.1429913,
+  "t_end": 1793196871.14308
+}

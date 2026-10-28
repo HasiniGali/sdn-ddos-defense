@@ -1,0 +1,55 @@
+{
+  "run_id": "C-syn-large-r3-xgb",
+  "seed": 7033,
+  "condition": "syn-large",
+  "rep": 3,
+  "mode": "xgb",
+  "attack": {
+    "type": "syn",
+    "pps": 500
+  },
+  "benign_load": "medium",
+  "link_profile": "default",
+  "link": {
+    "bw": 10,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "large",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "xgb",
+    "shadow": true
+  },
+  "status": "done",
+  "attacks": [
+    {
+      "host": "a1",
+      "ip": "10.0.0.201",
+      "start": 1793196737.1036139,
+      "end": 1793196766.8663528
+    },
+    {
+      "host": "a2",
+      "ip": "10.0.0.202",
+      "start": 1793196737.1052198,
+      "end": 1793196766.8663673
+    },
+    {
+      "host": "a3",
+      "ip": "10.0.0.203",
+      "start": 1793196737.4038398,
+      "end": 1793196766.8663716
+    },
+    {
+      "host": "a4",
+      "ip": "10.0.0.204",
+      "start": 1793196737.5834074,
+      "end": 1793196766.8663754
+    }
+  ],
+  "t0": 1793196726.8662708,
+  "t_end": 1793196787.8663313
+}

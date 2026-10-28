@@ -1,0 +1,49 @@
+{
+  "run_id": "C-udp-bw50-r4-xgb",
+  "seed": 7054,
+  "condition": "udp-bw50",
+  "rep": 4,
+  "mode": "xgb",
+  "attack": {
+    "type": "udp",
+    "pps": 500
+  },
+  "benign_load": "medium",
+  "link_profile": "bw50",
+  "link": {
+    "bw": 50,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "xgb",
+    "shadow": true
+  },
+  "status": "done",
+  "attacks": [
+    {
+      "host": "a1",
+      "ip": "10.0.0.201",
+      "start": 1793196568.2398999,
+      "end": 1793196598.1394787
+    },
+    {
+      "host": "a2",
+      "ip": "10.0.0.202",
+      "start": 1793196568.4087286,
+      "end": 1793196598.1395776
+    },
+    {
+      "host": "a3",
+      "ip": "10.0.0.203",
+      "start": 1793196568.594839,
+      "end": 1793196598.1395977
+    }
+  ],
+  "t0": 1793196558.1385624,
+  "t_end": 1793196619.1386368
+}

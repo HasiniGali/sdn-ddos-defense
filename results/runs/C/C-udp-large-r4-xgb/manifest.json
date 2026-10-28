@@ -1,0 +1,55 @@
+{
+  "run_id": "C-udp-large-r4-xgb",
+  "seed": 7074,
+  "condition": "udp-large",
+  "rep": 4,
+  "mode": "xgb",
+  "attack": {
+    "type": "udp",
+    "pps": 500
+  },
+  "benign_load": "medium",
+  "link_profile": "default",
+  "link": {
+    "bw": 10,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "large",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "xgb",
+    "shadow": true
+  },
+  "status": "done",
+  "attacks": [
+    {
+      "host": "a1",
+      "ip": "10.0.0.201",
+      "start": 1793199124.700738,
+      "end": 1793199154.6100082
+    },
+    {
+      "host": "a2",
+      "ip": "10.0.0.202",
+      "start": 1793199124.7335494,
+      "end": 1793199154.610021
+    },
+    {
+      "host": "a3",
+      "ip": "10.0.0.203",
+      "start": 1793199124.89384,
+      "end": 1793199154.610027
+    },
+    {
+      "host": "a4",
+      "ip": "10.0.0.204",
+      "start": 1793199125.058887,
+      "end": 1793199154.610033
+    }
+  ],
+  "t0": 1793199114.6099029,
+  "t_end": 1793199175.6099782
+}

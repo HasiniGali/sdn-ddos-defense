@@ -1,0 +1,14 @@
+
+--- 10.0.0.100 hping statistic ---
+14745 packets transmitted, 9 packets received, 100% packet loss
+round-trip min/avg/max = 8.1/8.8/10.1 ms
+HPING 10.0.0.100 (a1-eth0 10.0.0.100): udp mode set, 28 headers + 512 data bytes
+status=0 port=2485 seq=0
+status=0 port=2486 seq=1
+status=0 port=2487 seq=2
+status=0 port=2488 seq=3
+status=0 port=2489 seq=4
+status=0 port=2490 seq=5
+status=0 port=2980 seq=495
+status=0 port=3476 seq=991
+status=0 port=3969 seq=1484

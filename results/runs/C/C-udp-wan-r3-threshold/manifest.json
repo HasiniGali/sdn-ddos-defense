@@ -1,0 +1,49 @@
+{
+  "run_id": "C-udp-wan-r3-threshold",
+  "seed": 7063,
+  "condition": "udp-wan",
+  "rep": 3,
+  "mode": "threshold",
+  "attack": {
+    "type": "udp",
+    "pps": 500
+  },
+  "benign_load": "medium",
+  "link_profile": "wan",
+  "link": {
+    "bw": 10,
+    "delay_ms": 20,
+    "loss": 1.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "threshold",
+    "shadow": true
+  },
+  "status": "done",
+  "attacks": [
+    {
+      "host": "a1",
+      "ip": "10.0.0.201",
+      "start": 1793196831.4359908,
+      "end": 1793196861.1831248
+    },
+    {
+      "host": "a2",
+      "ip": "10.0.0.202",
+      "start": 1793196831.442232,
+      "end": 1793196861.183143
+    },
+    {
+      "host": "a3",
+      "ip": "10.0.0.203",
+      "start": 1793196831.4926803,
+      "end": 1793196861.1831493
+    }
+  ],
+  "t0": 1793196821.1829934,
+  "t_end": 1793196882.1831157
+}

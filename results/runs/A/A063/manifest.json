@@ -1,0 +1,27 @@
+{
+  "run_id": "A063",
+  "seed": 1063,
+  "condition": "train-benign",
+  "rep": 0,
+  "mode": "none",
+  "attack": null,
+  "benign_load": "low",
+  "link_profile": "bw50",
+  "link": {
+    "bw": 50,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 10,
+  "controller": {
+    "active_detector": "none",
+    "shadow": false
+  },
+  "status": "done",
+  "attacks": [],
+  "t0": 1793190386.8185396,
+  "t_end": 1793190438.8187275
+}

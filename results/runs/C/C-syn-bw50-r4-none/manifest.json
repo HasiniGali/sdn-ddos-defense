@@ -1,0 +1,49 @@
+{
+  "run_id": "C-syn-bw50-r4-none",
+  "seed": 7014,
+  "condition": "syn-bw50",
+  "rep": 4,
+  "mode": "none",
+  "attack": {
+    "type": "syn",
+    "pps": 500
+  },
+  "benign_load": "medium",
+  "link_profile": "bw50",
+  "link": {
+    "bw": 50,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "none",
+    "shadow": true
+  },
+  "status": "done",
+  "attacks": [
+    {
+      "host": "a1",
+      "ip": "10.0.0.201",
+      "start": 1793199216.2156074,
+      "end": 1793199246.197146
+    },
+    {
+      "host": "a2",
+      "ip": "10.0.0.202",
+      "start": 1793199216.2748582,
+      "end": 1793199246.197157
+    },
+    {
+      "host": "a3",
+      "ip": "10.0.0.203",
+      "start": 1793199216.4694574,
+      "end": 1793199246.1971638
+    }
+  ],
+  "t0": 1793199206.1970458,
+  "t_end": 1793199267.1971374
+}

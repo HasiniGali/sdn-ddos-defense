@@ -1,0 +1,27 @@
+{
+  "run_id": "A068",
+  "seed": 1068,
+  "condition": "train-benign",
+  "rep": 0,
+  "mode": "none",
+  "attack": null,
+  "benign_load": "medium",
+  "link_profile": "default",
+  "link": {
+    "bw": 10,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "large",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 10,
+  "controller": {
+    "active_detector": "none",
+    "shadow": false
+  },
+  "status": "done",
+  "attacks": [],
+  "t0": 1793190094.9790065,
+  "t_end": 1793190146.9790857
+}

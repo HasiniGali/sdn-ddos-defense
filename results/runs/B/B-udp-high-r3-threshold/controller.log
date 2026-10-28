@@ -1,0 +1,25 @@
+Traceback (most recent call last):
+  File "/opt/venv/lib/python3.12/site-packages/os_ken/base/app_manager.py", line 366, in run_apps
+    hub.joinall(services)
+  File "/opt/venv/lib/python3.12/site-packages/os_ken/lib/hub.py", line 295, in joinall
+    thread.join()
+  File "/usr/lib/python3.12/threading.py", line 1147, in join
+    self._wait_for_tstate_lock()
+  File "/usr/lib/python3.12/threading.py", line 1167, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/work/sdnddos/run_controller.py", line 24, in <module>
+    main()
+  File "/work/sdnddos/run_controller.py", line 20, in main
+    AppManager.run_apps(["os_ken.controller.ofp_handler", "sdnddos.controller_app"])
+  File "/opt/venv/lib/python3.12/site-packages/os_ken/base/app_manager.py", line 370, in run_apps
+    t.kill()
+    ^^^^^^
+AttributeError: 'HubThread' object has no attribute 'kill'

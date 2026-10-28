@@ -1,0 +1,23 @@
+{
+  "run_id": "A067",
+  "seed": 1067,
+  "condition": "train-benign",
+  "rep": 0,
+  "mode": "none",
+  "attack": null,
+  "benign_load": "medium",
+  "link_profile": "wan",
+  "link": {
+    "bw": 10,
+    "delay_ms": 20,
+    "loss": 1.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 10,
+  "controller": {
+    "active_detector": "none",
+    "shadow": false
+  }
+}

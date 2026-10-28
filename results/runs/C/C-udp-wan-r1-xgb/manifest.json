@@ -1,0 +1,49 @@
+{
+  "run_id": "C-udp-wan-r1-xgb",
+  "seed": 7061,
+  "condition": "udp-wan",
+  "rep": 1,
+  "mode": "xgb",
+  "attack": {
+    "type": "udp",
+    "pps": 500
+  },
+  "benign_load": "medium",
+  "link_profile": "wan",
+  "link": {
+    "bw": 10,
+    "delay_ms": 20,
+    "loss": 1.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "xgb",
+    "shadow": true
+  },
+  "status": "done",
+  "attacks": [
+    {
+      "host": "a1",
+      "ip": "10.0.0.201",
+      "start": 1793197236.167253,
+      "end": 1793197266.0613456
+    },
+    {
+      "host": "a2",
+      "ip": "10.0.0.202",
+      "start": 1793197236.231143,
+      "end": 1793197266.061355
+    },
+    {
+      "host": "a3",
+      "ip": "10.0.0.203",
+      "start": 1793197236.3068588,
+      "end": 1793197266.06136
+    }
+  ],
+  "t0": 1793197226.061264,
+  "t_end": 1793197287.0613172
+}

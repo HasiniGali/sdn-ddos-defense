@@ -1,0 +1,26 @@
+{
+  "run_id": "C-syn-wan-r0-threshold",
+  "seed": 7020,
+  "condition": "syn-wan",
+  "rep": 0,
+  "mode": "threshold",
+  "attack": {
+    "type": "syn",
+    "pps": 500
+  },
+  "benign_load": "medium",
+  "link_profile": "wan",
+  "link": {
+    "bw": 10,
+    "delay_ms": 20,
+    "loss": 1.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "threshold",
+    "shadow": true
+  }
+}

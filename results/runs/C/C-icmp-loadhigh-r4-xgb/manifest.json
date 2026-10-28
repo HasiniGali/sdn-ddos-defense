@@ -1,0 +1,49 @@
+{
+  "run_id": "C-icmp-loadhigh-r4-xgb",
+  "seed": 7084,
+  "condition": "icmp-loadhigh",
+  "rep": 4,
+  "mode": "xgb",
+  "attack": {
+    "type": "icmp",
+    "pps": 500
+  },
+  "benign_load": "high",
+  "link_profile": "default",
+  "link": {
+    "bw": 10,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "xgb",
+    "shadow": true
+  },
+  "status": "done",
+  "attacks": [
+    {
+      "host": "a1",
+      "ip": "10.0.0.201",
+      "start": 1793199546.6968288,
+      "end": 1793199576.5582821
+    },
+    {
+      "host": "a2",
+      "ip": "10.0.0.202",
+      "start": 1793199546.9207811,
+      "end": 1793199576.5583003
+    },
+    {
+      "host": "a3",
+      "ip": "10.0.0.203",
+      "start": 1793199547.0600176,
+      "end": 1793199576.558307
+    }
+  ],
+  "t0": 1793199536.5581746,
+  "t_end": 1793199597.558254
+}

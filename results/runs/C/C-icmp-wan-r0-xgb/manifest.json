@@ -1,0 +1,49 @@
+{
+  "run_id": "C-icmp-wan-r0-xgb",
+  "seed": 7100,
+  "condition": "icmp-wan",
+  "rep": 0,
+  "mode": "xgb",
+  "attack": {
+    "type": "icmp",
+    "pps": 500
+  },
+  "benign_load": "medium",
+  "link_profile": "wan",
+  "link": {
+    "bw": 10,
+    "delay_ms": 20,
+    "loss": 1.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "xgb",
+    "shadow": true
+  },
+  "status": "done",
+  "attacks": [
+    {
+      "host": "a1",
+      "ip": "10.0.0.201",
+      "start": 1793199787.1527114,
+      "end": 1793199817.0381918
+    },
+    {
+      "host": "a2",
+      "ip": "10.0.0.202",
+      "start": 1793199787.412024,
+      "end": 1793199817.038212
+    },
+    {
+      "host": "a3",
+      "ip": "10.0.0.203",
+      "start": 1793199787.62563,
+      "end": 1793199817.038221
+    }
+  ],
+  "t0": 1793199777.0380476,
+  "t_end": 1793199838.0381453
+}

@@ -1,0 +1,6 @@
+t,event,src,dpid,detector,score,attribution
+1793195235.952,block,10.0.0.2,1,threshold,389.238,"[[""pps"", 217.7582079589741], [""bps"", 0.0], [""avg_pkt_size"", 0.0], [""n_flows"", 0.0], [""n_dst"", 0.0]]"
+1793195247.944,unblock,10.0.0.2,1,threshold,0.999399,
+1793195253.946,block,10.0.0.2,1,threshold,727.168,"[[""pps"", 555.6876224687934], [""bps"", 0.0], [""avg_pkt_size"", 0.0], [""n_flows"", 0.0], [""n_dst"", 0.0]]"
+1793195273.962,unblock,10.0.0.2,1,threshold,0.996138,
+1793195287.963,block,10.0.0.2,1,threshold,835.79,"[[""pps"", 664.3096977171303], [""bps"", 0.0], [""avg_pkt_size"", 0.0], [""n_flows"", 0.0], [""n_dst"", 0.0]]"

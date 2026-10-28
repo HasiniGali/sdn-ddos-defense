@@ -1,0 +1,55 @@
+{
+  "run_id": "C-udp-large-r1-threshold",
+  "seed": 7071,
+  "condition": "udp-large",
+  "rep": 1,
+  "mode": "threshold",
+  "attack": {
+    "type": "udp",
+    "pps": 500
+  },
+  "benign_load": "medium",
+  "link_profile": "default",
+  "link": {
+    "bw": 10,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "large",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "threshold",
+    "shadow": true
+  },
+  "status": "done",
+  "attacks": [
+    {
+      "host": "a1",
+      "ip": "10.0.0.201",
+      "start": 1793199453.0335317,
+      "end": 1793199482.7526941
+    },
+    {
+      "host": "a2",
+      "ip": "10.0.0.202",
+      "start": 1793199453.3108227,
+      "end": 1793199482.7527084
+    },
+    {
+      "host": "a3",
+      "ip": "10.0.0.203",
+      "start": 1793199453.3628676,
+      "end": 1793199482.7527158
+    },
+    {
+      "host": "a4",
+      "ip": "10.0.0.204",
+      "start": 1793199453.4594045,
+      "end": 1793199482.752721
+    }
+  ],
+  "t0": 1793199442.752577,
+  "t_end": 1793199503.7526538
+}

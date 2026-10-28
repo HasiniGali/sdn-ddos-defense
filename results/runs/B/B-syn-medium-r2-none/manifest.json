@@ -1,0 +1,49 @@
+{
+  "run_id": "B-syn-medium-r2-none",
+  "seed": 5012,
+  "condition": "syn-medium",
+  "rep": 2,
+  "mode": "none",
+  "attack": {
+    "type": "syn",
+    "pps": 500
+  },
+  "benign_load": "medium",
+  "link_profile": "default",
+  "link": {
+    "bw": 10,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "none",
+    "shadow": true
+  },
+  "status": "done",
+  "attacks": [
+    {
+      "host": "a1",
+      "ip": "10.0.0.201",
+      "start": 1793194586.3710217,
+      "end": 1793194616.3511298
+    },
+    {
+      "host": "a2",
+      "ip": "10.0.0.202",
+      "start": 1793194586.6162455,
+      "end": 1793194616.3511417
+    },
+    {
+      "host": "a3",
+      "ip": "10.0.0.203",
+      "start": 1793194586.7222018,
+      "end": 1793194616.3511467
+    }
+  ],
+  "t0": 1793194576.3510265,
+  "t_end": 1793194637.3511152
+}

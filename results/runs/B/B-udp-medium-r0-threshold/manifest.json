@@ -1,0 +1,49 @@
+{
+  "run_id": "B-udp-medium-r0-threshold",
+  "seed": 5040,
+  "condition": "udp-medium",
+  "rep": 0,
+  "mode": "threshold",
+  "attack": {
+    "type": "udp",
+    "pps": 500
+  },
+  "benign_load": "medium",
+  "link_profile": "default",
+  "link": {
+    "bw": 10,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "threshold",
+    "shadow": true
+  },
+  "status": "done",
+  "attacks": [
+    {
+      "host": "a1",
+      "ip": "10.0.0.201",
+      "start": 1793192772.9912372,
+      "end": 1793192802.7120926
+    },
+    {
+      "host": "a2",
+      "ip": "10.0.0.202",
+      "start": 1793192773.2688813,
+      "end": 1793192802.712104
+    },
+    {
+      "host": "a3",
+      "ip": "10.0.0.203",
+      "start": 1793192773.4621272,
+      "end": 1793192802.7121103
+    }
+  ],
+  "t0": 1793192762.7120066,
+  "t_end": 1793192819.7120802
+}
