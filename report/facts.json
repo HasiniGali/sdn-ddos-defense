@@ -1,0 +1,2478 @@
+{
+ "runs_A": 72,
+ "runs_B": 180,
+ "runs_C": 195,
+ "runs_O": 0,
+ "n_runs_total": 447,
+ "thr_pps": "171",
+ "ae_thr": "2.25",
+ "cv_threshold_f1": "0.527",
+ "cv_threshold_auc": "0.803",
+ "cv_dt_f1": "0.980",
+ "cv_dt_auc": "0.983",
+ "cv_lr_f1": "0.804",
+ "cv_lr_auc": "0.979",
+ "cv_svm_f1": "0.992",
+ "cv_svm_auc": "0.999",
+ "cv_rf_f1": "0.987",
+ "cv_rf_auc": "0.999",
+ "cv_xgb_f1": "0.996",
+ "cv_xgb_auc": "0.999",
+ "cv_ae_f1": "0.000",
+ "cv_ae_auc": "0.858",
+ "clean_proposed": "XGBoost",
+ "clean_thr_pps": "171",
+ "cvclean_threshold_f1": "0.518",
+ "cvclean_dt_f1": "0.992",
+ "cvclean_lr_f1": "0.800",
+ "cvclean_svm_f1": "0.993",
+ "cvclean_rf_f1": "0.997",
+ "cvclean_xgb_f1": "0.997",
+ "cvclean_ae_f1": "0.002",
+ "spurious_rows": "53",
+ "train_rows": "15,558",
+ "train_attack_rows": "3,213",
+ "cv_rows": [
+  [
+   "XGBoost",
+   "0.996",
+   "0.999",
+   "0.997",
+   "proposed"
+  ],
+  [
+   "RBF SVM",
+   "0.992",
+   "0.999",
+   "0.993",
+   ""
+  ],
+  [
+   "Random forest",
+   "0.987",
+   "0.999",
+   "0.997",
+   ""
+  ],
+  [
+   "Decision tree",
+   "0.980",
+   "0.983",
+   "0.992",
+   ""
+  ],
+  [
+   "Logistic regression",
+   "0.804",
+   "0.979",
+   "0.800",
+   ""
+  ],
+  [
+   "Static threshold",
+   "0.527",
+   "0.803",
+   "0.518",
+   ""
+  ],
+  [
+   "Autoencoder",
+   "0.000",
+   "0.858",
+   "0.002",
+   ""
+  ]
+ ],
+ "cic_rows": "889,321",
+ "cic_rows_in": "70,427,637",
+ "cic_count_rows": [
+  [
+   "01-12",
+   "56,863",
+   "469,204",
+   "DrDoS_DNS, DrDoS_LDAP, DrDoS_MSSQL, DrDoS_NTP, DrDoS_NetBIOS, DrDoS_SNMP, DrDoS_SSDP, DrDoS_UDP, Syn, TFTP, UDP-lag, WebDDoS"
+  ],
+  [
+   "03-11",
+   "56,965",
+   "306,289",
+   "LDAP, MSSQL, NetBIOS, Portmap, Syn, UDP, UDPLag"
+  ]
+ ],
+ "cic_full_nfeat": "78",
+ "cic_benign_share": "12.8 %",
+ "mn_data_rows": [
+  [
+   "A",
+   "72",
+   "15,505",
+   "3,212",
+   "Training and model selection (GroupKFold by run)"
+  ],
+  [
+   "B",
+   "180",
+   "34,037",
+   "8,632",
+   "Held-out evaluation, core matrix"
+  ],
+  [
+   "C",
+   "195",
+   "44,585",
+   "9,345",
+   "Held-out evaluation, network conditions"
+  ]
+ ],
+ "det_rows": [
+  [
+   "Random forest",
+   "0.998 [0.997, 0.999]",
+   "0.999",
+   "0.998 [0.996, 0.999]",
+   "0.03 [0.00, 0.07]",
+   "1.000",
+   "1.18",
+   "3.18",
+   "0.0"
+  ],
+  [
+   "XGBoost",
+   "0.998 [0.996, 0.999]",
+   "0.999",
+   "0.996 [0.994, 0.998]",
+   "0.03 [0.01, 0.07]",
+   "1.000",
+   "1.23",
+   "3.23",
+   "0.0"
+  ],
+  [
+   "RBF SVM",
+   "0.996 [0.995, 0.998]",
+   "0.999",
+   "0.994 [0.991, 0.996]",
+   "0.02 [0.00, 0.06]",
+   "0.999",
+   "1.26",
+   "3.26",
+   "0.0"
+  ],
+  [
+   "Decision tree",
+   "0.994 [0.992, 0.996]",
+   "0.992",
+   "0.995 [0.992, 0.997]",
+   "0.22 [0.14, 0.32]",
+   "0.996",
+   "1.24",
+   "3.24",
+   "0.0"
+  ],
+  [
+   "Logistic regression",
+   "0.919 [0.894, 0.940]",
+   "0.910",
+   "0.928 [0.888, 0.960]",
+   "2.69 [1.66, 3.94]",
+   "0.992",
+   "1.78",
+   "3.96",
+   "2.1"
+  ],
+  [
+   "Static threshold",
+   "0.570 [0.527, 0.605]",
+   "0.431",
+   "0.840 [0.774, 0.899]",
+   "32.51 [29.68, 35.86]",
+   "0.822",
+   "1.71",
+   "3.61",
+   "13.6"
+  ],
+  [
+   "Autoencoder",
+   "0.000 [0.000, 0.000]",
+   "0.000",
+   "0.000 [0.000, 0.000]",
+   "0.91 [0.83, 0.98]",
+   "0.860",
+   "n/a",
+   "n/a",
+   "100.0"
+  ]
+ ],
+ "det_ae_f1": "0.000",
+ "det_ae_f1_ci": "[0.000, 0.000]",
+ "det_ae_recall": "0.000",
+ "det_ae_precision": "0.000",
+ "det_ae_fpr": "0.91 %",
+ "det_ae_fpr_benign": "0.0 %",
+ "det_ae_fpr_server": "4.8 %",
+ "det_ae_auc": "0.860",
+ "det_ae_lat": "n/a",
+ "det_ae_blocklat": "n/a",
+ "det_ae_missed": "100.0",
+ "det_dt_f1": "0.994",
+ "det_dt_f1_ci": "[0.992, 0.996]",
+ "det_dt_recall": "0.995",
+ "det_dt_precision": "0.992",
+ "det_dt_fpr": "0.22 %",
+ "det_dt_fpr_benign": "0.3 %",
+ "det_dt_fpr_server": "0.0 %",
+ "det_dt_auc": "0.996",
+ "det_dt_lat": "1.24",
+ "det_dt_blocklat": "3.24",
+ "det_dt_missed": "0.0",
+ "det_lr_f1": "0.919",
+ "det_lr_f1_ci": "[0.894, 0.940]",
+ "det_lr_recall": "0.928",
+ "det_lr_precision": "0.910",
+ "det_lr_fpr": "2.69 %",
+ "det_lr_fpr_benign": "4.1 %",
+ "det_lr_fpr_server": "0.0 %",
+ "det_lr_auc": "0.992",
+ "det_lr_lat": "1.78",
+ "det_lr_blocklat": "3.96",
+ "det_lr_missed": "2.1",
+ "det_rf_f1": "0.998",
+ "det_rf_f1_ci": "[0.997, 0.999]",
+ "det_rf_recall": "0.998",
+ "det_rf_precision": "0.999",
+ "det_rf_fpr": "0.03 %",
+ "det_rf_fpr_benign": "0.0 %",
+ "det_rf_fpr_server": "0.0 %",
+ "det_rf_auc": "1.000",
+ "det_rf_lat": "1.18",
+ "det_rf_blocklat": "3.18",
+ "det_rf_missed": "0.0",
+ "det_svm_f1": "0.996",
+ "det_svm_f1_ci": "[0.995, 0.998]",
+ "det_svm_recall": "0.994",
+ "det_svm_precision": "0.999",
+ "det_svm_fpr": "0.02 %",
+ "det_svm_fpr_benign": "0.0 %",
+ "det_svm_fpr_server": "0.0 %",
+ "det_svm_auc": "0.999",
+ "det_svm_lat": "1.26",
+ "det_svm_blocklat": "3.26",
+ "det_svm_missed": "0.0",
+ "det_threshold_f1": "0.570",
+ "det_threshold_f1_ci": "[0.527, 0.605]",
+ "det_threshold_recall": "0.840",
+ "det_threshold_precision": "0.431",
+ "det_threshold_fpr": "32.51 %",
+ "det_threshold_fpr_benign": "26.3 %",
+ "det_threshold_fpr_server": "85.1 %",
+ "det_threshold_auc": "0.822",
+ "det_threshold_lat": "1.71",
+ "det_threshold_blocklat": "3.61",
+ "det_threshold_missed": "13.6",
+ "det_xgb_f1": "0.998",
+ "det_xgb_f1_ci": "[0.996, 0.999]",
+ "det_xgb_recall": "0.996",
+ "det_xgb_precision": "0.999",
+ "det_xgb_fpr": "0.03 %",
+ "det_xgb_fpr_benign": "0.0 %",
+ "det_xgb_fpr_server": "0.0 %",
+ "det_xgb_auc": "1.000",
+ "det_xgb_lat": "1.23",
+ "det_xgb_blocklat": "3.23",
+ "det_xgb_missed": "0.0",
+ "det_n": "23,220",
+ "det_n_attack": "5,271",
+ "det_cond_rows": [
+  [
+   "SYN low (50 pps)",
+   "0.979",
+   "0.996",
+   "0.954",
+   "0.988",
+   "0.004",
+   "0.00",
+   "0.14",
+   "39.57"
+  ],
+  [
+   "SYN medium (500 pps)",
+   "1.000",
+   "1.000",
+   "1.000",
+   "1.000",
+   "0.996",
+   "0.00",
+   "0.00",
+   "40.55"
+  ],
+  [
+   "SYN high (5000 pps)",
+   "1.000",
+   "1.000",
+   "1.000",
+   "1.000",
+   "1.000",
+   "0.14",
+   "1.28",
+   "31.38"
+  ],
+  [
+   "UDP low (50 pps)",
+   "0.992",
+   "0.992",
+   "0.983",
+   "0.988",
+   "0.000",
+   "0.28",
+   "0.28",
+   "39.75"
+  ],
+  [
+   "UDP medium (500 pps)",
+   "0.996",
+   "0.996",
+   "0.996",
+   "0.996",
+   "0.958",
+   "0.00",
+   "0.14",
+   "35.56"
+  ],
+  [
+   "UDP high (5000 pps)",
+   "1.000",
+   "1.000",
+   "1.000",
+   "1.000",
+   "1.000",
+   "0.00",
+   "0.14",
+   "14.91"
+  ],
+  [
+   "ICMP low (50 pps)",
+   "0.988",
+   "0.992",
+   "0.971",
+   "0.958",
+   "0.000",
+   "0.00",
+   "0.00",
+   "40.61"
+  ],
+  [
+   "ICMP medium (500 pps)",
+   "0.996",
+   "0.996",
+   "0.996",
+   "0.996",
+   "0.958",
+   "0.00",
+   "0.00",
+   "38.81"
+  ],
+  [
+   "ICMP high (5000 pps)",
+   "1.000",
+   "1.000",
+   "1.000",
+   "1.000",
+   "1.000",
+   "0.00",
+   "0.00",
+   "26.01"
+  ]
+ ],
+ "det_ofat_rows": [
+  [
+   "SYN, high benign load",
+   "1.000",
+   "0.982",
+   "0.545",
+   "0.00",
+   "1.32",
+   "58.36"
+  ],
+  [
+   "SYN, 50 Mb/s links",
+   "1.000",
+   "1.000",
+   "0.528",
+   "0.00",
+   "0.00",
+   "60.75"
+  ],
+  [
+   "SYN, WAN: 20 ms, 1 % loss",
+   "0.994",
+   "0.992",
+   "0.780",
+   "0.00",
+   "0.14",
+   "17.30"
+  ],
+  [
+   "SYN, large topology",
+   "0.998",
+   "0.998",
+   "0.690",
+   "0.00",
+   "0.00",
+   "19.40"
+  ],
+  [
+   "UDP, high benign load",
+   "1.000",
+   "0.998",
+   "0.604",
+   "0.00",
+   "0.14",
+   "41.29"
+  ],
+  [
+   "UDP, 50 Mb/s links",
+   "1.000",
+   "1.000",
+   "0.519",
+   "0.00",
+   "0.00",
+   "60.00"
+  ],
+  [
+   "UDP, WAN: 20 ms, 1 % loss",
+   "0.990",
+   "0.990",
+   "0.830",
+   "0.42",
+   "0.42",
+   "11.06"
+  ],
+  [
+   "UDP, large topology",
+   "1.000",
+   "0.998",
+   "0.755",
+   "0.00",
+   "0.07",
+   "12.41"
+  ],
+  [
+   "ICMP, high benign load",
+   "1.000",
+   "0.990",
+   "0.584",
+   "0.00",
+   "0.72",
+   "44.14"
+  ],
+  [
+   "ICMP, 50 Mb/s links",
+   "0.998",
+   "0.998",
+   "0.521",
+   "0.00",
+   "0.00",
+   "60.11"
+  ],
+  [
+   "ICMP, WAN: 20 ms, 1 % loss",
+   "1.000",
+   "0.998",
+   "0.777",
+   "0.00",
+   "0.00",
+   "17.33"
+  ],
+  [
+   "ICMP, large topology",
+   "0.998",
+   "1.000",
+   "0.722",
+   "0.00",
+   "0.00",
+   "15.18"
+  ],
+  [
+   "Flash crowd (benign only)",
+   "\u2014",
+   "\u2014",
+   "\u2014",
+   "0.00",
+   "0.70",
+   "46.72"
+  ]
+ ],
+ "det_paired_rows": [
+  [
+   "Autoencoder",
+   "F1",
+   "110",
+   "+0.9521",
+   "[+0.9076, +0.9883]",
+   "< 0.001"
+  ],
+  [
+   "Autoencoder",
+   "FPR",
+   "110",
+   "-0.0091",
+   "[-0.0099, -0.0083]",
+   "< 0.001"
+  ],
+  [
+   "Decision tree",
+   "F1",
+   "110",
+   "+0.0032",
+   "[+0.0018, +0.0048]",
+   "< 0.001"
+  ],
+  [
+   "Decision tree",
+   "FPR",
+   "110",
+   "-0.0021",
+   "[-0.0031, -0.0013]",
+   "< 0.001"
+  ],
+  [
+   "Logistic regression",
+   "F1",
+   "110",
+   "+0.0852",
+   "[+0.0579, +0.1152]",
+   "< 0.001"
+  ],
+  [
+   "Logistic regression",
+   "FPR",
+   "110",
+   "-0.0306",
+   "[-0.0439, -0.0189]",
+   "< 0.001"
+  ],
+  [
+   "Random forest",
+   "F1",
+   "110",
+   "-0.0008",
+   "[-0.0015, -0.0003]",
+   "0.011"
+  ],
+  [
+   "Random forest",
+   "FPR",
+   "110",
+   "+0.0001",
+   "[+0.0000, +0.0002]",
+   "0.317"
+  ],
+  [
+   "RBF SVM",
+   "F1",
+   "110",
+   "+0.0012",
+   "[+0.0002, +0.0023]",
+   "0.017"
+  ],
+  [
+   "RBF SVM",
+   "FPR",
+   "110",
+   "+0.0001",
+   "[-0.0001, +0.0004]",
+   "0.144"
+  ],
+  [
+   "Static threshold",
+   "F1",
+   "110",
+   "+0.4082",
+   "[+0.3609, +0.4599]",
+   "< 0.001"
+  ],
+  [
+   "Static threshold",
+   "FPR",
+   "110",
+   "-0.3502",
+   "[-0.3804, -0.3192]",
+   "< 0.001"
+  ]
+ ],
+ "dpair_ae_f1_diff": "+0.952",
+ "dpair_ae_f1_p": "< 0.001",
+ "dpair_ae_f1_ci": "[+0.908, +0.988]",
+ "dpair_ae_fpr_diff": "-0.009",
+ "dpair_ae_fpr_p": "< 0.001",
+ "dpair_ae_fpr_ci": "[-0.010, -0.008]",
+ "dpair_ae_recall_diff": "+0.951",
+ "dpair_ae_recall_p": "< 0.001",
+ "dpair_ae_recall_ci": "[+0.907, +0.987]",
+ "dpair_dt_f1_diff": "+0.003",
+ "dpair_dt_f1_p": "< 0.001",
+ "dpair_dt_f1_ci": "[+0.002, +0.005]",
+ "dpair_dt_fpr_diff": "-0.002",
+ "dpair_dt_fpr_p": "< 0.001",
+ "dpair_dt_fpr_ci": "[-0.003, -0.001]",
+ "dpair_dt_recall_diff": "+0.001",
+ "dpair_dt_recall_p": "0.134",
+ "dpair_dt_recall_ci": "[-0.000, +0.003]",
+ "dpair_lr_f1_diff": "+0.085",
+ "dpair_lr_f1_p": "< 0.001",
+ "dpair_lr_f1_ci": "[+0.058, +0.115]",
+ "dpair_lr_fpr_diff": "-0.031",
+ "dpair_lr_fpr_p": "< 0.001",
+ "dpair_lr_fpr_ci": "[-0.044, -0.019]",
+ "dpair_lr_recall_diff": "+0.068",
+ "dpair_lr_recall_p": "< 0.001",
+ "dpair_lr_recall_ci": "[+0.035, +0.106]",
+ "dpair_rf_f1_diff": "-0.001",
+ "dpair_rf_f1_p": "0.011",
+ "dpair_rf_f1_ci": "[-0.001, -0.000]",
+ "dpair_rf_fpr_diff": "+0.000",
+ "dpair_rf_fpr_p": "0.317",
+ "dpair_rf_fpr_ci": "[+0.000, +0.000]",
+ "dpair_rf_recall_diff": "-0.001",
+ "dpair_rf_recall_p": "0.016",
+ "dpair_rf_recall_ci": "[-0.003, -0.000]",
+ "dpair_svm_f1_diff": "+0.001",
+ "dpair_svm_f1_p": "0.017",
+ "dpair_svm_f1_ci": "[+0.000, +0.002]",
+ "dpair_svm_fpr_diff": "+0.000",
+ "dpair_svm_fpr_p": "0.144",
+ "dpair_svm_fpr_ci": "[-0.000, +0.000]",
+ "dpair_svm_recall_diff": "+0.003",
+ "dpair_svm_recall_p": "0.006",
+ "dpair_svm_recall_ci": "[+0.001, +0.005]",
+ "dpair_threshold_f1_diff": "+0.408",
+ "dpair_threshold_f1_p": "< 0.001",
+ "dpair_threshold_f1_ci": "[+0.361, +0.460]",
+ "dpair_threshold_fpr_diff": "-0.350",
+ "dpair_threshold_fpr_p": "< 0.001",
+ "dpair_threshold_fpr_ci": "[-0.380, -0.319]",
+ "dpair_threshold_recall_diff": "+0.154",
+ "dpair_threshold_recall_p": "< 0.001",
+ "dpair_threshold_recall_ci": "[+0.096, +0.219]",
+ "sweep_best_f1": "0.654",
+ "sweep_best_thr": "449",
+ "sweep_best_fpr": "16.6 %",
+ "sweep_best_recall": "0.761",
+ "live_rows": "23,220",
+ "live_mismatch_max": "0",
+ "mit_tcp_rows": [
+  [
+   "SYN low",
+   "1.00 \u00b10.00",
+   "0.36 \u00b10.02",
+   "1.00 \u00b10.00",
+   "1.00 \u00b10.00"
+  ],
+  [
+   "SYN medium",
+   "1.00 \u00b10.00",
+   "0.38 \u00b10.03",
+   "1.00 \u00b10.00",
+   "1.00 \u00b10.00"
+  ],
+  [
+   "SYN high",
+   "0.10 \u00b10.06",
+   "0.36 \u00b10.06",
+   "1.00 \u00b10.00",
+   "1.00 \u00b10.00"
+  ],
+  [
+   "UDP low",
+   "1.00 \u00b10.00",
+   "0.31 \u00b10.07",
+   "1.00 \u00b10.00",
+   "1.00 \u00b10.00"
+  ],
+  [
+   "UDP medium",
+   "0.71 \u00b10.09",
+   "0.36 \u00b10.09",
+   "1.00 \u00b10.00",
+   "1.00 \u00b10.00"
+  ],
+  [
+   "UDP high",
+   "0.04 \u00b10.03",
+   "0.38 \u00b10.04",
+   "1.00 \u00b10.00",
+   "1.00 \u00b10.00"
+  ],
+  [
+   "ICMP low",
+   "1.00 \u00b10.00",
+   "0.36 \u00b10.07",
+   "1.00 \u00b10.00",
+   "1.00 \u00b10.00"
+  ],
+  [
+   "ICMP medium",
+   "0.73 \u00b10.08",
+   "0.34 \u00b10.05",
+   "1.00 \u00b10.00",
+   "1.00 \u00b10.00"
+  ],
+  [
+   "ICMP high",
+   "0.03 \u00b10.03",
+   "0.37 \u00b10.06",
+   "1.00 \u00b10.00",
+   "1.00 \u00b10.00"
+  ]
+ ],
+ "mit_rtt_rows": [
+  [
+   "SYN low",
+   "11.1 \u00b10.9",
+   "8.1 \u00b10.0",
+   "10.0 \u00b11.2",
+   "10.3 \u00b11.6"
+  ],
+  [
+   "SYN medium",
+   "15.1 \u00b10.8",
+   "8.1 \u00b10.0",
+   "10.5 \u00b10.7",
+   "10.1 \u00b10.7"
+  ],
+  [
+   "SYN high",
+   "54.5 \u00b11.4",
+   "8.1 \u00b10.1",
+   "12.4 \u00b10.5",
+   "13.1 \u00b10.9"
+  ],
+  [
+   "UDP low",
+   "12.5 \u00b10.4",
+   "8.1 \u00b10.0",
+   "10.5 \u00b10.8",
+   "9.4 \u00b11.3"
+  ],
+  [
+   "UDP medium",
+   "510.1 \u00b132.7",
+   "8.1 \u00b10.1",
+   "12.3 \u00b10.7",
+   "12.7 \u00b10.9"
+  ],
+  [
+   "UDP high",
+   "456.3 \u00b10.6",
+   "8.1 \u00b10.1",
+   "13.3 \u00b10.9",
+   "13.8 \u00b12.6"
+  ],
+  [
+   "ICMP low",
+   "12.8 \u00b11.6",
+   "8.1 \u00b10.1",
+   "9.9 \u00b11.1",
+   "10.8 \u00b11.3"
+  ],
+  [
+   "ICMP medium",
+   "486.4 \u00b159.4",
+   "8.1 \u00b10.0",
+   "12.5 \u00b11.2",
+   "12.7 \u00b11.7"
+  ],
+  [
+   "ICMP high",
+   "456.7 \u00b11.0",
+   "8.1 \u00b10.1",
+   "14.2 \u00b11.3",
+   "14.2 \u00b11.3"
+  ]
+ ],
+ "mit_http_rows": [
+  [
+   "SYN low",
+   "100.0 \u00b10.0",
+   "97.2 \u00b10.6",
+   "100.0 \u00b10.0",
+   "100.0 \u00b10.0"
+  ],
+  [
+   "SYN medium",
+   "100.0 \u00b10.0",
+   "97.5 \u00b10.5",
+   "100.0 \u00b10.0",
+   "100.0 \u00b10.0"
+  ],
+  [
+   "SYN high",
+   "100.0 \u00b10.0",
+   "97.5 \u00b10.4",
+   "100.0 \u00b10.0",
+   "100.0 \u00b10.0"
+  ],
+  [
+   "UDP low",
+   "100.0 \u00b10.0",
+   "97.4 \u00b10.2",
+   "100.0 \u00b10.0",
+   "100.0 \u00b10.0"
+  ],
+  [
+   "UDP medium",
+   "100.0 \u00b10.0",
+   "97.3 \u00b10.5",
+   "100.0 \u00b10.0",
+   "100.0 \u00b10.0"
+  ],
+  [
+   "UDP high",
+   "42.8 \u00b118.3",
+   "96.9 \u00b10.8",
+   "99.0 \u00b10.9",
+   "99.6 \u00b11.0"
+  ],
+  [
+   "ICMP low",
+   "100.0 \u00b10.0",
+   "97.5 \u00b11.1",
+   "100.0 \u00b10.0",
+   "100.0 \u00b10.0"
+  ],
+  [
+   "ICMP medium",
+   "100.0 \u00b10.0",
+   "97.8 \u00b10.3",
+   "100.0 \u00b10.0",
+   "100.0 \u00b10.0"
+  ],
+  [
+   "ICMP high",
+   "35.6 \u00b111.8",
+   "96.9 \u00b10.8",
+   "99.8 \u00b10.5",
+   "99.8 \u00b10.4"
+  ]
+ ],
+ "mit_udp_rows": [
+  [
+   "SYN low",
+   "0.0 \u00b10.0",
+   "0.0 \u00b10.0",
+   "0.0 \u00b10.0",
+   "0.0 \u00b10.0"
+  ],
+  [
+   "SYN medium",
+   "0.0 \u00b10.0",
+   "0.0 \u00b10.0",
+   "0.0 \u00b10.0",
+   "0.0 \u00b10.0"
+  ],
+  [
+   "SYN high",
+   "24.7 \u00b115.8",
+   "1.4 \u00b11.5",
+   "2.6 \u00b10.9",
+   "2.6 \u00b11.1"
+  ],
+  [
+   "UDP low",
+   "0.0 \u00b10.0",
+   "0.0 \u00b10.0",
+   "0.0 \u00b10.0",
+   "0.0 \u00b10.0"
+  ],
+  [
+   "UDP medium",
+   "0.5 \u00b10.3",
+   "0.0 \u00b10.0",
+   "0.0 \u00b10.0",
+   "0.0 \u00b10.0"
+  ],
+  [
+   "UDP high",
+   "73.5 \u00b11.4",
+   "6.8 \u00b12.7",
+   "9.7 \u00b11.1",
+   "10.5 \u00b11.3"
+  ],
+  [
+   "ICMP low",
+   "0.0 \u00b10.0",
+   "0.0 \u00b10.0",
+   "0.0 \u00b10.0",
+   "0.0 \u00b10.0"
+  ],
+  [
+   "ICMP medium",
+   "0.6 \u00b10.1",
+   "0.0 \u00b10.0",
+   "0.0 \u00b10.0",
+   "0.0 \u00b10.0"
+  ],
+  [
+   "ICMP high",
+   "75.3 \u00b13.9",
+   "7.7 \u00b10.3",
+   "9.2 \u00b11.8",
+   "9.8 \u00b12.5"
+  ]
+ ],
+ "mit_ttm_rows": [
+  [
+   "SYN low",
+   "n/a",
+   "3.65 \u00b10.40",
+   "3.58 \u00b10.86",
+   "2.0",
+   "0.0",
+   "0.0"
+  ],
+  [
+   "SYN medium",
+   "3.28 \u00b10.10",
+   "3.49 \u00b10.59",
+   "2.99 \u00b10.50",
+   "2.4",
+   "0.0",
+   "0.0"
+  ],
+  [
+   "SYN high",
+   "3.33 \u00b10.32",
+   "3.12 \u00b10.42",
+   "3.24 \u00b10.12",
+   "2.2",
+   "0.0",
+   "0.0"
+  ],
+  [
+   "UDP low",
+   "n/a",
+   "3.19 \u00b10.33",
+   "3.09 \u00b10.24",
+   "2.8",
+   "0.0",
+   "0.0"
+  ],
+  [
+   "UDP medium",
+   "3.96 \u00b10.77",
+   "3.29 \u00b10.16",
+   "3.01 \u00b10.42",
+   "2.6",
+   "0.0",
+   "0.0"
+  ],
+  [
+   "UDP high",
+   "2.93 \u00b10.40",
+   "2.95 \u00b10.49",
+   "3.21 \u00b10.59",
+   "2.6",
+   "0.0",
+   "0.0"
+  ],
+  [
+   "ICMP low",
+   "n/a",
+   "3.54 \u00b10.59",
+   "3.29 \u00b10.36",
+   "2.4",
+   "0.0",
+   "0.0"
+  ],
+  [
+   "ICMP medium",
+   "3.56 \u00b10.50",
+   "3.45 \u00b10.16",
+   "3.19 \u00b10.53",
+   "2.2",
+   "0.0",
+   "0.0"
+  ],
+  [
+   "ICMP high",
+   "3.23 \u00b10.31",
+   "3.27 \u00b10.31",
+   "3.11 \u00b10.35",
+   "2.2",
+   "0.0",
+   "0.0"
+  ]
+ ],
+ "ofat_rows": [
+  [
+   "SYN, high benign load",
+   "1.00 \u00b10.00",
+   "0.34 \u00b10.15",
+   "1.00 \u00b10.00",
+   "22.2 \u00b11.4",
+   "8.1 \u00b10.0",
+   "15.6 \u00b11.1"
+  ],
+  [
+   "SYN, 50 Mb/s links",
+   "1.00 \u00b10.00",
+   "0.31 \u00b10.06",
+   "1.00 \u00b10.00",
+   "8.1 \u00b10.1",
+   "8.1 \u00b10.0",
+   "8.1 \u00b10.0"
+  ],
+  [
+   "SYN, WAN: 20 ms, 1 % loss",
+   "0.26 \u00b10.04",
+   "0.22 \u00b10.08",
+   "0.32 \u00b10.02",
+   "80.0 \u00b10.1",
+   "80.0 \u00b10.1",
+   "80.0 \u00b10.1"
+  ],
+  [
+   "SYN, large topology",
+   "1.00 \u00b10.00",
+   "0.36 \u00b10.04",
+   "1.00 \u00b10.00",
+   "22.9 \u00b13.8",
+   "8.1 \u00b10.0",
+   "12.8 \u00b11.7"
+  ],
+  [
+   "UDP, high benign load",
+   "0.70 \u00b10.06",
+   "0.38 \u00b10.08",
+   "1.00 \u00b10.00",
+   "473.9 \u00b123.0",
+   "8.1 \u00b10.0",
+   "17.1 \u00b11.3"
+  ],
+  [
+   "UDP, 50 Mb/s links",
+   "1.00 \u00b10.00",
+   "0.29 \u00b10.03",
+   "1.00 \u00b10.00",
+   "9.0 \u00b10.2",
+   "8.0 \u00b10.0",
+   "8.1 \u00b10.0"
+  ],
+  [
+   "UDP, WAN: 20 ms, 1 % loss",
+   "0.27 \u00b10.02",
+   "0.26 \u00b10.09",
+   "0.28 \u00b10.02",
+   "80.1 \u00b10.1",
+   "80.0 \u00b10.1",
+   "80.0 \u00b10.1"
+  ],
+  [
+   "UDP, large topology",
+   "0.19 \u00b10.02",
+   "0.37 \u00b10.06",
+   "1.00 \u00b10.00",
+   "456.8 \u00b14.4",
+   "8.1 \u00b10.1",
+   "17.1 \u00b12.7"
+  ],
+  [
+   "ICMP, high benign load",
+   "0.67 \u00b10.03",
+   "0.38 \u00b10.04",
+   "1.00 \u00b10.00",
+   "477.0 \u00b133.1",
+   "8.0 \u00b10.0",
+   "18.1 \u00b12.3"
+  ],
+  [
+   "ICMP, 50 Mb/s links",
+   "1.00 \u00b10.00",
+   "0.32 \u00b10.04",
+   "1.00 \u00b10.00",
+   "9.0 \u00b10.1",
+   "8.1 \u00b10.0",
+   "8.1 \u00b10.1"
+  ],
+  [
+   "ICMP, WAN: 20 ms, 1 % loss",
+   "0.30 \u00b10.04",
+   "0.24 \u00b10.10",
+   "0.32 \u00b10.04",
+   "80.5 \u00b10.7",
+   "80.1 \u00b10.1",
+   "80.0 \u00b10.0"
+  ],
+  [
+   "ICMP, large topology",
+   "0.27 \u00b10.11",
+   "0.36 \u00b10.06",
+   "1.00 \u00b10.00",
+   "482.1 \u00b124.3",
+   "8.1 \u00b10.1",
+   "17.4 \u00b12.4"
+  ]
+ ],
+ "flash_rows": [
+  [
+   "No defense",
+   "0.0",
+   "0.0",
+   "1.00 \u00b10.00",
+   "100.0 \u00b10.0"
+  ],
+  [
+   "Static threshold",
+   "4.4",
+   "95.9",
+   "0.33 \u00b10.13",
+   "96.3 \u00b10.9"
+  ],
+  [
+   "XGBoost",
+   "0.0",
+   "0.0",
+   "1.00 \u00b10.00",
+   "100.0 \u00b10.0"
+  ]
+ ],
+ "flash_none_fb": "0.0",
+ "flash_none_blocked_s": "0.0",
+ "flash_threshold_fb": "4.4",
+ "flash_threshold_blocked_s": "95.9",
+ "flash_xgb_fb": "0.0",
+ "flash_xgb_blocked_s": "0.0",
+ "mpair_B_none_tcp_ratio": "+0.374",
+ "mpair_B_none_tcp_ratio_ci": "[+0.254, +0.493]",
+ "mpair_B_none_tcp_ratio_p": "< 0.001",
+ "mpair_B_none_tcp_ratio_verdict": "XGBoost better",
+ "mpair_B_none_udp_loss_pct": "-16.7",
+ "mpair_B_none_udp_loss_pct_ci": "[-25, -9.32]",
+ "mpair_B_none_udp_loss_pct_p": "< 0.001",
+ "mpair_B_none_udp_loss_pct_verdict": "XGBoost better",
+ "mpair_B_none_rtt_p50_ms": "-212",
+ "mpair_B_none_rtt_p50_ms_ci": "[-279, -146]",
+ "mpair_B_none_rtt_p50_ms_p": "< 0.001",
+ "mpair_B_none_rtt_p50_ms_verdict": "XGBoost better",
+ "mpair_B_none_rtt_p95_ms": "-76.2",
+ "mpair_B_none_rtt_p95_ms_ci": "[-106, -48.1]",
+ "mpair_B_none_rtt_p95_ms_p": "< 0.001",
+ "mpair_B_none_rtt_p95_ms_verdict": "XGBoost better",
+ "mpair_B_none_ping_loss_pct": "-17.2",
+ "mpair_B_none_ping_loss_pct_ci": "[-25.6, -9.75]",
+ "mpair_B_none_ping_loss_pct_p": "< 0.001",
+ "mpair_B_none_ping_loss_pct_verdict": "XGBoost better",
+ "mpair_B_none_http_success_pct": "+13.5",
+ "mpair_B_none_http_success_pct_ci": "[+6.58, +21.6]",
+ "mpair_B_none_http_success_pct_p": "0.005",
+ "mpair_B_none_http_success_pct_verdict": "XGBoost better",
+ "mpair_B_none_http_p50_ms": "-1.04e+03",
+ "mpair_B_none_http_p50_ms_ci": "[-1.51e+03, -645]",
+ "mpair_B_none_http_p50_ms_p": "< 0.001",
+ "mpair_B_none_http_p50_ms_verdict": "XGBoost better",
+ "mpair_B_none_false_blocks": "+0",
+ "mpair_B_none_false_blocks_ci": "[+0, +0]",
+ "mpair_B_none_false_blocks_p": "1.000",
+ "mpair_B_none_false_blocks_verdict": "no significant difference",
+ "mpair_B_none_benign_blocked_s": "+0",
+ "mpair_B_none_benign_blocked_s_ci": "[+0, +0]",
+ "mpair_B_none_benign_blocked_s_p": "1.000",
+ "mpair_B_none_benign_blocked_s_verdict": "no significant difference",
+ "mpair_B_threshold_tcp_ratio": "+0.639",
+ "mpair_B_threshold_tcp_ratio_ci": "[+0.625, +0.653]",
+ "mpair_B_threshold_tcp_ratio_p": "< 0.001",
+ "mpair_B_threshold_tcp_ratio_verdict": "XGBoost better",
+ "mpair_B_threshold_udp_loss_pct": "+0.722",
+ "mpair_B_threshold_udp_loss_pct_ci": "[+0.297, +1.23]",
+ "mpair_B_threshold_udp_loss_pct_p": "0.002",
+ "mpair_B_threshold_udp_loss_pct_verdict": "XGBoost worse",
+ "mpair_B_threshold_rtt_p50_ms": "+3.84",
+ "mpair_B_threshold_rtt_p50_ms_ci": "[+3.27, +4.42]",
+ "mpair_B_threshold_rtt_p50_ms_p": "< 0.001",
+ "mpair_B_threshold_rtt_p50_ms_verdict": "XGBoost worse",
+ "mpair_B_threshold_rtt_p95_ms": "-19.7",
+ "mpair_B_threshold_rtt_p95_ms_ci": "[-65.7, +29]",
+ "mpair_B_threshold_rtt_p95_ms_p": "0.440",
+ "mpair_B_threshold_rtt_p95_ms_verdict": "no significant difference",
+ "mpair_B_threshold_ping_loss_pct": "+0.752",
+ "mpair_B_threshold_ping_loss_pct_ci": "[+0.361, +1.21]",
+ "mpair_B_threshold_ping_loss_pct_p": "0.001",
+ "mpair_B_threshold_ping_loss_pct_verdict": "XGBoost worse",
+ "mpair_B_threshold_http_success_pct": "+2.61",
+ "mpair_B_threshold_http_success_pct_ci": "[+2.44, +2.79]",
+ "mpair_B_threshold_http_success_pct_p": "< 0.001",
+ "mpair_B_threshold_http_success_pct_verdict": "XGBoost better",
+ "mpair_B_threshold_http_p50_ms": "+12",
+ "mpair_B_threshold_http_p50_ms_ci": "[+10.2, +14]",
+ "mpair_B_threshold_http_p50_ms_p": "< 0.001",
+ "mpair_B_threshold_http_p50_ms_verdict": "XGBoost worse",
+ "mpair_B_threshold_false_blocks": "-2.38",
+ "mpair_B_threshold_false_blocks_ci": "[-2.51, -2.24]",
+ "mpair_B_threshold_false_blocks_p": "< 0.001",
+ "mpair_B_threshold_false_blocks_verdict": "XGBoost better",
+ "mpair_B_threshold_benign_blocked_s": "-32.7",
+ "mpair_B_threshold_benign_blocked_s_ci": "[-34, -31.7]",
+ "mpair_B_threshold_benign_blocked_s_p": "< 0.001",
+ "mpair_B_threshold_benign_blocked_s_verdict": "XGBoost better",
+ "mpair_B_threshold_ttm_s": "-0.258",
+ "mpair_B_threshold_ttm_s_ci": "[-0.482, -0.06]",
+ "mpair_B_threshold_ttm_s_p": "0.036",
+ "mpair_B_threshold_ttm_s_verdict": "XGBoost better",
+ "mpair_B_dt_tcp_ratio": "+1.71e-06",
+ "mpair_B_dt_tcp_ratio_ci": "[-4.58e-06, +8.11e-06]",
+ "mpair_B_dt_tcp_ratio_p": "0.282",
+ "mpair_B_dt_tcp_ratio_verdict": "no significant difference",
+ "mpair_B_dt_udp_loss_pct": "+0.161",
+ "mpair_B_dt_udp_loss_pct_ci": "[-0.061, +0.41]",
+ "mpair_B_dt_udp_loss_pct_p": "0.233",
+ "mpair_B_dt_udp_loss_pct_verdict": "no significant difference",
+ "mpair_B_dt_rtt_p50_ms": "+0.182",
+ "mpair_B_dt_rtt_p50_ms_ci": "[-0.211, +0.57]",
+ "mpair_B_dt_rtt_p50_ms_p": "0.281",
+ "mpair_B_dt_rtt_p50_ms_verdict": "no significant difference",
+ "mpair_B_dt_rtt_p95_ms": "-2.22",
+ "mpair_B_dt_rtt_p95_ms_ci": "[-20.8, +16.7]",
+ "mpair_B_dt_rtt_p95_ms_p": "0.788",
+ "mpair_B_dt_rtt_p95_ms_verdict": "no significant difference",
+ "mpair_B_dt_ping_loss_pct": "-0.031",
+ "mpair_B_dt_ping_loss_pct_ci": "[-0.312, +0.238]",
+ "mpair_B_dt_ping_loss_pct_p": "0.755",
+ "mpair_B_dt_ping_loss_pct_verdict": "no significant difference",
+ "mpair_B_dt_http_success_pct": "+0.0683",
+ "mpair_B_dt_http_success_pct_ci": "[-0.0203, +0.177]",
+ "mpair_B_dt_http_success_pct_p": "0.173",
+ "mpair_B_dt_http_success_pct_verdict": "no significant difference",
+ "mpair_B_dt_http_p50_ms": "+1.66",
+ "mpair_B_dt_http_p50_ms_ci": "[+0.17, +3.21]",
+ "mpair_B_dt_http_p50_ms_p": "0.063",
+ "mpair_B_dt_http_p50_ms_verdict": "no significant difference",
+ "mpair_B_dt_false_blocks": "+0",
+ "mpair_B_dt_false_blocks_ci": "[+0, +0]",
+ "mpair_B_dt_false_blocks_p": "1.000",
+ "mpair_B_dt_false_blocks_verdict": "no significant difference",
+ "mpair_B_dt_benign_blocked_s": "+0",
+ "mpair_B_dt_benign_blocked_s_ci": "[+0, +0]",
+ "mpair_B_dt_benign_blocked_s_p": "1.000",
+ "mpair_B_dt_benign_blocked_s_verdict": "no significant difference",
+ "mpair_B_dt_ttm_s": "-0.138",
+ "mpair_B_dt_ttm_s_ci": "[-0.287, +0.0148]",
+ "mpair_B_dt_ttm_s_p": "0.031",
+ "mpair_B_dt_ttm_s_verdict": "no significant difference",
+ "mpair_B_rows": [
+  [
+   "No defense",
+   "TCP goodput / offered",
+   "45",
+   "+0.374",
+   "[+0.254, +0.493]",
+   "< 0.001",
+   "XGBoost better"
+  ],
+  [
+   "No defense",
+   "Benign UDP loss (%)",
+   "44",
+   "-16.7",
+   "[-25, -9.32]",
+   "< 0.001",
+   "XGBoost better"
+  ],
+  [
+   "No defense",
+   "Ping RTT p50 (ms)",
+   "45",
+   "-212",
+   "[-279, -146]",
+   "< 0.001",
+   "XGBoost better"
+  ],
+  [
+   "No defense",
+   "Ping RTT p95 (ms)",
+   "45",
+   "-76.2",
+   "[-106, -48.1]",
+   "< 0.001",
+   "XGBoost better"
+  ],
+  [
+   "No defense",
+   "Ping loss (%)",
+   "45",
+   "-17.2",
+   "[-25.6, -9.75]",
+   "< 0.001",
+   "XGBoost better"
+  ],
+  [
+   "No defense",
+   "HTTP success (%)",
+   "45",
+   "+13.5",
+   "[+6.58, +21.6]",
+   "0.005",
+   "XGBoost better"
+  ],
+  [
+   "No defense",
+   "HTTP p50 (ms)",
+   "45",
+   "-1.04e+03",
+   "[-1.51e+03, -645]",
+   "< 0.001",
+   "XGBoost better"
+  ],
+  [
+   "No defense",
+   "False blocks",
+   "45",
+   "+0",
+   "[+0, +0]",
+   "1.000",
+   "no significant difference"
+  ],
+  [
+   "No defense",
+   "Benign blocked (s)",
+   "45",
+   "+0",
+   "[+0, +0]",
+   "1.000",
+   "no significant difference"
+  ],
+  [
+   "Static threshold",
+   "TCP goodput / offered",
+   "45",
+   "+0.639",
+   "[+0.625, +0.653]",
+   "< 0.001",
+   "XGBoost better"
+  ],
+  [
+   "Static threshold",
+   "Benign UDP loss (%)",
+   "44",
+   "+0.722",
+   "[+0.297, +1.23]",
+   "0.002",
+   "XGBoost worse"
+  ],
+  [
+   "Static threshold",
+   "Ping RTT p50 (ms)",
+   "45",
+   "+3.84",
+   "[+3.27, +4.42]",
+   "< 0.001",
+   "XGBoost worse"
+  ],
+  [
+   "Static threshold",
+   "Ping RTT p95 (ms)",
+   "45",
+   "-19.7",
+   "[-65.7, +29]",
+   "0.440",
+   "no significant difference"
+  ],
+  [
+   "Static threshold",
+   "Ping loss (%)",
+   "45",
+   "+0.752",
+   "[+0.361, +1.21]",
+   "0.001",
+   "XGBoost worse"
+  ],
+  [
+   "Static threshold",
+   "HTTP success (%)",
+   "45",
+   "+2.61",
+   "[+2.44, +2.79]",
+   "< 0.001",
+   "XGBoost better"
+  ],
+  [
+   "Static threshold",
+   "HTTP p50 (ms)",
+   "45",
+   "+12",
+   "[+10.2, +14]",
+   "< 0.001",
+   "XGBoost worse"
+  ],
+  [
+   "Static threshold",
+   "False blocks",
+   "45",
+   "-2.38",
+   "[-2.51, -2.24]",
+   "< 0.001",
+   "XGBoost better"
+  ],
+  [
+   "Static threshold",
+   "Benign blocked (s)",
+   "45",
+   "-32.7",
+   "[-34, -31.7]",
+   "< 0.001",
+   "XGBoost better"
+  ],
+  [
+   "Static threshold",
+   "Time to mitigation (s)",
+   "30",
+   "-0.258",
+   "[-0.482, -0.06]",
+   "0.036",
+   "XGBoost better"
+  ],
+  [
+   "Decision tree",
+   "TCP goodput / offered",
+   "45",
+   "+1.71e-06",
+   "[-4.58e-06, +8.11e-06]",
+   "0.282",
+   "no significant difference"
+  ],
+  [
+   "Decision tree",
+   "Benign UDP loss (%)",
+   "45",
+   "+0.161",
+   "[-0.061, +0.41]",
+   "0.233",
+   "no significant difference"
+  ],
+  [
+   "Decision tree",
+   "Ping RTT p50 (ms)",
+   "45",
+   "+0.182",
+   "[-0.211, +0.57]",
+   "0.281",
+   "no significant difference"
+  ],
+  [
+   "Decision tree",
+   "Ping RTT p95 (ms)",
+   "45",
+   "-2.22",
+   "[-20.8, +16.7]",
+   "0.788",
+   "no significant difference"
+  ],
+  [
+   "Decision tree",
+   "Ping loss (%)",
+   "45",
+   "-0.031",
+   "[-0.312, +0.238]",
+   "0.755",
+   "no significant difference"
+  ],
+  [
+   "Decision tree",
+   "HTTP success (%)",
+   "45",
+   "+0.0683",
+   "[-0.0203, +0.177]",
+   "0.173",
+   "no significant difference"
+  ],
+  [
+   "Decision tree",
+   "HTTP p50 (ms)",
+   "45",
+   "+1.66",
+   "[+0.17, +3.21]",
+   "0.063",
+   "no significant difference"
+  ],
+  [
+   "Decision tree",
+   "False blocks",
+   "45",
+   "+0",
+   "[+0, +0]",
+   "1.000",
+   "no significant difference"
+  ],
+  [
+   "Decision tree",
+   "Benign blocked (s)",
+   "45",
+   "+0",
+   "[+0, +0]",
+   "1.000",
+   "no significant difference"
+  ],
+  [
+   "Decision tree",
+   "Time to mitigation (s)",
+   "45",
+   "-0.138",
+   "[-0.287, +0.0148]",
+   "0.031",
+   "no significant difference"
+  ]
+ ],
+ "mpair_C_none_tcp_ratio": "+0.172",
+ "mpair_C_none_tcp_ratio_ci": "[+0.108, +0.242]",
+ "mpair_C_none_tcp_ratio_p": "< 0.001",
+ "mpair_C_none_tcp_ratio_verdict": "XGBoost better",
+ "mpair_C_none_udp_loss_pct": "-0.35",
+ "mpair_C_none_udp_loss_pct_ci": "[-0.527, -0.191]",
+ "mpair_C_none_udp_loss_pct_p": "< 0.001",
+ "mpair_C_none_udp_loss_pct_verdict": "XGBoost better",
+ "mpair_C_none_rtt_p50_ms": "-142",
+ "mpair_C_none_rtt_p50_ms_ci": "[-192, -91.8]",
+ "mpair_C_none_rtt_p50_ms_p": "< 0.001",
+ "mpair_C_none_rtt_p50_ms_verdict": "XGBoost better",
+ "mpair_C_none_rtt_p95_ms": "-40.6",
+ "mpair_C_none_rtt_p95_ms_ci": "[-58.2, -24.8]",
+ "mpair_C_none_rtt_p95_ms_p": "< 0.001",
+ "mpair_C_none_rtt_p95_ms_verdict": "XGBoost better",
+ "mpair_C_none_ping_loss_pct": "-0.497",
+ "mpair_C_none_ping_loss_pct_ci": "[-0.807, -0.197]",
+ "mpair_C_none_ping_loss_pct_p": "0.003",
+ "mpair_C_none_ping_loss_pct_verdict": "XGBoost better",
+ "mpair_C_none_http_success_pct": "+0",
+ "mpair_C_none_http_success_pct_ci": "[+0, +0]",
+ "mpair_C_none_http_success_pct_p": "1.000",
+ "mpair_C_none_http_success_pct_verdict": "no significant difference",
+ "mpair_C_none_http_p50_ms": "-283",
+ "mpair_C_none_http_p50_ms_ci": "[-384, -184]",
+ "mpair_C_none_http_p50_ms_p": "< 0.001",
+ "mpair_C_none_http_p50_ms_verdict": "XGBoost better",
+ "mpair_C_none_false_blocks": "+0",
+ "mpair_C_none_false_blocks_ci": "[+0, +0]",
+ "mpair_C_none_false_blocks_p": "1.000",
+ "mpair_C_none_false_blocks_verdict": "no significant difference",
+ "mpair_C_none_benign_blocked_s": "+0",
+ "mpair_C_none_benign_blocked_s_ci": "[+0, +0]",
+ "mpair_C_none_benign_blocked_s_p": "1.000",
+ "mpair_C_none_benign_blocked_s_verdict": "no significant difference",
+ "mpair_C_threshold_tcp_ratio": "+0.519",
+ "mpair_C_threshold_tcp_ratio_ci": "[+0.455, +0.578]",
+ "mpair_C_threshold_tcp_ratio_p": "< 0.001",
+ "mpair_C_threshold_tcp_ratio_verdict": "XGBoost better",
+ "mpair_C_threshold_udp_loss_pct": "+0.211",
+ "mpair_C_threshold_udp_loss_pct_ci": "[+0.0493, +0.372]",
+ "mpair_C_threshold_udp_loss_pct_p": "0.021",
+ "mpair_C_threshold_udp_loss_pct_verdict": "XGBoost worse",
+ "mpair_C_threshold_rtt_p50_ms": "+4.35",
+ "mpair_C_threshold_rtt_p50_ms_ci": "[+3.32, +5.4]",
+ "mpair_C_threshold_rtt_p50_ms_p": "< 0.001",
+ "mpair_C_threshold_rtt_p50_ms_verdict": "XGBoost worse",
+ "mpair_C_threshold_rtt_p95_ms": "+87.4",
+ "mpair_C_threshold_rtt_p95_ms_ci": "[+49.1, +126]",
+ "mpair_C_threshold_rtt_p95_ms_p": "< 0.001",
+ "mpair_C_threshold_rtt_p95_ms_verdict": "XGBoost worse",
+ "mpair_C_threshold_ping_loss_pct": "-0.623",
+ "mpair_C_threshold_ping_loss_pct_ci": "[-1.71, +0.134]",
+ "mpair_C_threshold_ping_loss_pct_p": "0.455",
+ "mpair_C_threshold_ping_loss_pct_verdict": "no significant difference",
+ "mpair_C_threshold_http_success_pct": "+3.97",
+ "mpair_C_threshold_http_success_pct_ci": "[+2.96, +5.03]",
+ "mpair_C_threshold_http_success_pct_p": "< 0.001",
+ "mpair_C_threshold_http_success_pct_verdict": "XGBoost better",
+ "mpair_C_threshold_http_p50_ms": "+9.27",
+ "mpair_C_threshold_http_p50_ms_ci": "[+7.08, +11.5]",
+ "mpair_C_threshold_http_p50_ms_p": "< 0.001",
+ "mpair_C_threshold_http_p50_ms_verdict": "XGBoost worse",
+ "mpair_C_threshold_false_blocks": "-2.89",
+ "mpair_C_threshold_false_blocks_ci": "[-3.26, -2.52]",
+ "mpair_C_threshold_false_blocks_p": "< 0.001",
+ "mpair_C_threshold_false_blocks_verdict": "XGBoost better",
+ "mpair_C_threshold_benign_blocked_s": "-60.5",
+ "mpair_C_threshold_benign_blocked_s_ci": "[-69.7, -51.1]",
+ "mpair_C_threshold_benign_blocked_s_p": "< 0.001",
+ "mpair_C_threshold_benign_blocked_s_verdict": "XGBoost better",
+ "mpair_C_threshold_ttm_s": "-0.426",
+ "mpair_C_threshold_ttm_s_ci": "[-0.621, -0.233]",
+ "mpair_C_threshold_ttm_s_p": "< 0.001",
+ "mpair_C_threshold_ttm_s_verdict": "XGBoost better",
+ "mpair_C_rows": [
+  [
+   "No defense",
+   "TCP goodput / offered",
+   "65",
+   "+0.172",
+   "[+0.108, +0.242]",
+   "< 0.001",
+   "XGBoost better"
+  ],
+  [
+   "No defense",
+   "Benign UDP loss (%)",
+   "62",
+   "-0.35",
+   "[-0.527, -0.191]",
+   "< 0.001",
+   "XGBoost better"
+  ],
+  [
+   "No defense",
+   "Ping RTT p50 (ms)",
+   "65",
+   "-142",
+   "[-192, -91.8]",
+   "< 0.001",
+   "XGBoost better"
+  ],
+  [
+   "No defense",
+   "Ping RTT p95 (ms)",
+   "65",
+   "-40.6",
+   "[-58.2, -24.8]",
+   "< 0.001",
+   "XGBoost better"
+  ],
+  [
+   "No defense",
+   "Ping loss (%)",
+   "65",
+   "-0.497",
+   "[-0.807, -0.197]",
+   "0.003",
+   "XGBoost better"
+  ],
+  [
+   "No defense",
+   "HTTP success (%)",
+   "65",
+   "+0",
+   "[+0, +0]",
+   "1.000",
+   "no significant difference"
+  ],
+  [
+   "No defense",
+   "HTTP p50 (ms)",
+   "65",
+   "-283",
+   "[-384, -184]",
+   "< 0.001",
+   "XGBoost better"
+  ],
+  [
+   "No defense",
+   "False blocks",
+   "65",
+   "+0",
+   "[+0, +0]",
+   "1.000",
+   "no significant difference"
+  ],
+  [
+   "No defense",
+   "Benign blocked (s)",
+   "65",
+   "+0",
+   "[+0, +0]",
+   "1.000",
+   "no significant difference"
+  ],
+  [
+   "Static threshold",
+   "TCP goodput / offered",
+   "65",
+   "+0.519",
+   "[+0.455, +0.578]",
+   "< 0.001",
+   "XGBoost better"
+  ],
+  [
+   "Static threshold",
+   "Benign UDP loss (%)",
+   "28",
+   "+0.211",
+   "[+0.0493, +0.372]",
+   "0.021",
+   "XGBoost worse"
+  ],
+  [
+   "Static threshold",
+   "Ping RTT p50 (ms)",
+   "65",
+   "+4.35",
+   "[+3.32, +5.4]",
+   "< 0.001",
+   "XGBoost worse"
+  ],
+  [
+   "Static threshold",
+   "Ping RTT p95 (ms)",
+   "65",
+   "+87.4",
+   "[+49.1, +126]",
+   "< 0.001",
+   "XGBoost worse"
+  ],
+  [
+   "Static threshold",
+   "Ping loss (%)",
+   "65",
+   "-0.623",
+   "[-1.71, +0.134]",
+   "0.455",
+   "no significant difference"
+  ],
+  [
+   "Static threshold",
+   "HTTP success (%)",
+   "65",
+   "+3.97",
+   "[+2.96, +5.03]",
+   "< 0.001",
+   "XGBoost better"
+  ],
+  [
+   "Static threshold",
+   "HTTP p50 (ms)",
+   "65",
+   "+9.27",
+   "[+7.08, +11.5]",
+   "< 0.001",
+   "XGBoost worse"
+  ],
+  [
+   "Static threshold",
+   "False blocks",
+   "65",
+   "-2.89",
+   "[-3.26, -2.52]",
+   "< 0.001",
+   "XGBoost better"
+  ],
+  [
+   "Static threshold",
+   "Benign blocked (s)",
+   "65",
+   "-60.5",
+   "[-69.7, -51.1]",
+   "< 0.001",
+   "XGBoost better"
+  ],
+  [
+   "Static threshold",
+   "Time to mitigation (s)",
+   "60",
+   "-0.426",
+   "[-0.621, -0.233]",
+   "< 0.001",
+   "XGBoost better"
+  ]
+ ],
+ "worse_rows": [
+  [
+   "B",
+   "icmp-low",
+   "Decision tree",
+   "Ping RTT p50 (ms)",
+   "+0.903",
+   "[+0.04, +1.77]"
+  ],
+  [
+   "B",
+   "syn-low",
+   "Decision tree",
+   "Ping RTT p95 (ms)",
+   "+3.11",
+   "[+0.492, +5.51]"
+  ],
+  [
+   "B",
+   "icmp-medium",
+   "Decision tree",
+   "HTTP p50 (ms)",
+   "+2.53",
+   "[+0.25, +4.81]"
+  ],
+  [
+   "C",
+   "udp-wan",
+   "No defense",
+   "Benign UDP loss (%)",
+   "+0.232",
+   "[+0.0386, +0.406]"
+  ]
+ ],
+ "n_worse": "59",
+ "n_worse_thr": "55",
+ "n_worse_other": "4",
+ "worse_thr_metrics": "HTTP p50 (ms) (18); Ping RTT p50 (ms) (16); Ping RTT p95 (ms) (12); Benign UDP loss (%) (4); Ping loss (%) (3); Time to mitigation (s) (2)",
+ "B_none_tcp": "0.62",
+ "B_none_rtt": "223.9",
+ "B_none_http": "86.5",
+ "B_none_fb": "0.00",
+ "B_none_ttm": "n/a",
+ "B_none_blockedfrac": "0 %",
+ "B_threshold_tcp": "0.36",
+ "B_threshold_rtt": "8.1",
+ "B_threshold_http": "97.3",
+ "B_threshold_fb": "2.38",
+ "B_threshold_ttm": "3.38",
+ "B_threshold_blockedfrac": "67 %",
+ "B_dt_tcp": "1.00",
+ "B_dt_rtt": "11.7",
+ "B_dt_http": "99.9",
+ "B_dt_fb": "0.00",
+ "B_dt_ttm": "3.33",
+ "B_dt_blockedfrac": "100 %",
+ "B_xgb_tcp": "1.00",
+ "B_xgb_rtt": "11.9",
+ "B_xgb_http": "99.9",
+ "B_xgb_fb": "0.00",
+ "B_xgb_ttm": "3.19",
+ "B_xgb_blockedfrac": "100 %",
+ "Bhigh_none_tcp": "0.06",
+ "Bhigh_none_rtt": "322.5",
+ "Bhigh_threshold_tcp": "0.37",
+ "Bhigh_threshold_rtt": "8.1",
+ "Bhigh_dt_tcp": "1.00",
+ "Bhigh_dt_rtt": "13.3",
+ "Bhigh_xgb_tcp": "1.00",
+ "Bhigh_xgb_rtt": "13.7",
+ "ovh_rows": [
+  [
+   "Static threshold",
+   "0.012",
+   "0.022",
+   "0.000"
+  ],
+  [
+   "Decision tree",
+   "0.574",
+   "2.844",
+   "0.060"
+  ],
+  [
+   "Logistic regression",
+   "1.315",
+   "5.725",
+   "0.177"
+  ],
+  [
+   "Random forest",
+   "22.294",
+   "64.009",
+   "7.250"
+  ],
+  [
+   "XGBoost",
+   "1.540",
+   "5.554",
+   "0.176"
+  ],
+  [
+   "RBF SVM",
+   "3.513",
+   "12.125",
+   "0.872"
+  ],
+  [
+   "Autoencoder",
+   "3.128",
+   "11.516",
+   "0.338"
+  ]
+ ],
+ "live_ae_ms": "3.128",
+ "live_dt_ms": "0.574",
+ "live_lr_ms": "1.315",
+ "live_rf_ms": "22.294",
+ "live_svm_ms": "3.513",
+ "live_threshold_ms": "0.012",
+ "live_xgb_ms": "1.540",
+ "live_total_poll_ms": "43.347",
+ "live_polls": "12,520",
+ "live_sources": "6.3",
+ "poll_total_ms": "43.347",
+ "poll_total_p95": "104.864",
+ "ctrl_cpu_B": "2.4",
+ "ctrl_cpu_B_max": "7.4",
+ "ctrl_rss_B": "247.0",
+ "bench_ae_ms": "0.338",
+ "bench_dt_ms": "0.060",
+ "bench_lr_ms": "0.177",
+ "bench_rf_ms": "7.250",
+ "bench_svm_ms": "0.872",
+ "bench_threshold_ms": "0.000",
+ "bench_xgb_ms": "0.176",
+ "shap_top": "`avg_pkt_size`, `frac_tcp`, `bps`, `n_dst`",
+ "shap_rows": [
+  [
+   "avg_pkt_size",
+   "4.465",
+   "0.217",
+   "0.267"
+  ],
+  [
+   "frac_tcp",
+   "2.497",
+   "0.076",
+   "0.009"
+  ],
+  [
+   "bps",
+   "1.201",
+   "0.077",
+   "0.251"
+  ],
+  [
+   "n_dst",
+   "1.025",
+   "0.036",
+   "0.109"
+  ],
+  [
+   "pps",
+   "0.484",
+   "0.067",
+   "0.001"
+  ],
+  [
+   "n_flows",
+   "0.388",
+   "0.028",
+   "0.000"
+  ],
+  [
+   "new_flows",
+   "0.258",
+   "0.001",
+   "0.004"
+  ],
+  [
+   "frac_icmp",
+   "0.241",
+   "0.037",
+   "0.000"
+  ],
+  [
+   "frac_udp",
+   "0.233",
+   "0.024",
+   "0.030"
+  ],
+  [
+   "n_proto",
+   "0.005",
+   "0.005",
+   "0.000"
+  ]
+ ],
+ "block_rows": [
+  [
+   "frac_tcp",
+   "214",
+   "64.8 %"
+  ],
+  [
+   "avg_pkt_size",
+   "112",
+   "33.9 %"
+  ],
+  [
+   "bps",
+   "4",
+   "1.2 %"
+  ]
+ ],
+ "block_n": "330",
+ "block_top": "frac_tcp",
+ "block_top_share": "64.8 %",
+ "cic_rows_tab": [
+  [
+   "FULL, random 70/30 (day 01-12)",
+   "Decision tree",
+   "0.9994",
+   "0.9988",
+   "0.06",
+   "0.9991",
+   "0.9995"
+  ],
+  [
+   "FULL, random 70/30 (day 01-12)",
+   "Logistic regression",
+   "0.9989",
+   "0.9986",
+   "0.56",
+   "0.9965",
+   "0.9997"
+  ],
+  [
+   "FULL, random 70/30 (day 01-12)",
+   "Random forest",
+   "0.9998",
+   "0.9997",
+   "0.06",
+   "0.9995",
+   "1.0000"
+  ],
+  [
+   "FULL, random 70/30 (day 01-12)",
+   "XGBoost",
+   "0.9999",
+   "0.9999",
+   "0.09",
+   "0.9995",
+   "1.0000"
+  ],
+  [
+   "FULL, train 01-12 / test 03-11",
+   "Decision tree",
+   "0.9997",
+   "0.9996",
+   "0.14",
+   "0.9991",
+   "0.9995"
+  ],
+  [
+   "FULL, train 01-12 / test 03-11",
+   "Logistic regression",
+   "0.9987",
+   "0.9990",
+   "0.87",
+   "0.9952",
+   "0.9997"
+  ],
+  [
+   "FULL, train 01-12 / test 03-11",
+   "Random forest",
+   "0.9884",
+   "0.9788",
+   "0.90",
+   "0.9849",
+   "0.9985"
+  ],
+  [
+   "FULL, train 01-12 / test 03-11",
+   "XGBoost",
+   "0.9975",
+   "0.9998",
+   "2.66",
+   "0.9866",
+   "1.0000"
+  ],
+  [
+   "OF, random 70/30 (day 01-12)",
+   "Decision tree",
+   "0.9957",
+   "0.9958",
+   "3.51",
+   "0.9803",
+   "0.9966"
+  ],
+  [
+   "OF, random 70/30 (day 01-12)",
+   "Logistic regression",
+   "0.8937",
+   "0.8148",
+   "7.07",
+   "0.8721",
+   "0.9596"
+  ],
+  [
+   "OF, random 70/30 (day 01-12)",
+   "Random forest",
+   "0.9974",
+   "0.9990",
+   "3.44",
+   "0.9823",
+   "0.9972"
+  ],
+  [
+   "OF, random 70/30 (day 01-12)",
+   "XGBoost",
+   "0.9975",
+   "0.9993",
+   "3.61",
+   "0.9816",
+   "0.9972"
+  ],
+  [
+   "OF, random 70/30 (day 01-12)",
+   "Static threshold",
+   "0.9429",
+   "1.0000",
+   "100.00",
+   "0.5000",
+   "0.7676"
+  ],
+  [
+   "OF, train 01-12 / test 03-11",
+   "Decision tree",
+   "0.8500",
+   "0.7433",
+   "3.07",
+   "0.8563",
+   "0.7819"
+  ],
+  [
+   "OF, train 01-12 / test 03-11",
+   "Logistic regression",
+   "0.8379",
+   "0.7423",
+   "15.84",
+   "0.7919",
+   "0.9284"
+  ],
+  [
+   "OF, train 01-12 / test 03-11",
+   "Random forest",
+   "0.8498",
+   "0.7434",
+   "3.26",
+   "0.8554",
+   "0.9009"
+  ],
+  [
+   "OF, train 01-12 / test 03-11",
+   "XGBoost",
+   "0.8496",
+   "0.7434",
+   "3.55",
+   "0.8539",
+   "0.9607"
+  ],
+  [
+   "OF, train 01-12 / test 03-11",
+   "Static threshold",
+   "0.9149",
+   "1.0000",
+   "100.00",
+   "0.5000",
+   "0.7635"
+  ]
+ ],
+ "cic_FULL_random0112_dt_f1": "0.999",
+ "cic_FULL_random0112_dt_recall": "0.999",
+ "cic_FULL_random0112_dt_fpr": "0.1 %",
+ "cic_FULL_random0112_dt_bal": "0.999",
+ "cic_FULL_random0112_lr_f1": "0.999",
+ "cic_FULL_random0112_lr_recall": "0.999",
+ "cic_FULL_random0112_lr_fpr": "0.6 %",
+ "cic_FULL_random0112_lr_bal": "0.996",
+ "cic_FULL_random0112_rf_f1": "1.000",
+ "cic_FULL_random0112_rf_recall": "1.000",
+ "cic_FULL_random0112_rf_fpr": "0.1 %",
+ "cic_FULL_random0112_rf_bal": "1.000",
+ "cic_FULL_random0112_xgb_f1": "1.000",
+ "cic_FULL_random0112_xgb_recall": "1.000",
+ "cic_FULL_random0112_xgb_fpr": "0.1 %",
+ "cic_FULL_random0112_xgb_bal": "0.999",
+ "cic_FULL_day0112_0311_dt_f1": "1.000",
+ "cic_FULL_day0112_0311_dt_recall": "1.000",
+ "cic_FULL_day0112_0311_dt_fpr": "0.1 %",
+ "cic_FULL_day0112_0311_dt_bal": "0.999",
+ "cic_FULL_day0112_0311_lr_f1": "0.999",
+ "cic_FULL_day0112_0311_lr_recall": "0.999",
+ "cic_FULL_day0112_0311_lr_fpr": "0.9 %",
+ "cic_FULL_day0112_0311_lr_bal": "0.995",
+ "cic_FULL_day0112_0311_rf_f1": "0.988",
+ "cic_FULL_day0112_0311_rf_recall": "0.979",
+ "cic_FULL_day0112_0311_rf_fpr": "0.9 %",
+ "cic_FULL_day0112_0311_rf_bal": "0.985",
+ "cic_FULL_day0112_0311_xgb_f1": "0.997",
+ "cic_FULL_day0112_0311_xgb_recall": "1.000",
+ "cic_FULL_day0112_0311_xgb_fpr": "2.7 %",
+ "cic_FULL_day0112_0311_xgb_bal": "0.987",
+ "cic_OF_random0112_dt_f1": "0.996",
+ "cic_OF_random0112_dt_recall": "0.996",
+ "cic_OF_random0112_dt_fpr": "3.5 %",
+ "cic_OF_random0112_dt_bal": "0.980",
+ "cic_OF_random0112_lr_f1": "0.894",
+ "cic_OF_random0112_lr_recall": "0.815",
+ "cic_OF_random0112_lr_fpr": "7.1 %",
+ "cic_OF_random0112_lr_bal": "0.872",
+ "cic_OF_random0112_rf_f1": "0.997",
+ "cic_OF_random0112_rf_recall": "0.999",
+ "cic_OF_random0112_rf_fpr": "3.4 %",
+ "cic_OF_random0112_rf_bal": "0.982",
+ "cic_OF_random0112_xgb_f1": "0.997",
+ "cic_OF_random0112_xgb_recall": "0.999",
+ "cic_OF_random0112_xgb_fpr": "3.6 %",
+ "cic_OF_random0112_xgb_bal": "0.982",
+ "cic_OF_random0112_threshold_f1": "0.943",
+ "cic_OF_random0112_threshold_recall": "1.000",
+ "cic_OF_random0112_threshold_fpr": "100.0 %",
+ "cic_OF_random0112_threshold_bal": "0.500",
+ "cic_OF_day0112_0311_dt_f1": "0.850",
+ "cic_OF_day0112_0311_dt_recall": "0.743",
+ "cic_OF_day0112_0311_dt_fpr": "3.1 %",
+ "cic_OF_day0112_0311_dt_bal": "0.856",
+ "cic_OF_day0112_0311_lr_f1": "0.838",
+ "cic_OF_day0112_0311_lr_recall": "0.742",
+ "cic_OF_day0112_0311_lr_fpr": "15.8 %",
+ "cic_OF_day0112_0311_lr_bal": "0.792",
+ "cic_OF_day0112_0311_rf_f1": "0.850",
+ "cic_OF_day0112_0311_rf_recall": "0.743",
+ "cic_OF_day0112_0311_rf_fpr": "3.3 %",
+ "cic_OF_day0112_0311_rf_bal": "0.855",
+ "cic_OF_day0112_0311_xgb_f1": "0.850",
+ "cic_OF_day0112_0311_xgb_recall": "0.743",
+ "cic_OF_day0112_0311_xgb_fpr": "3.5 %",
+ "cic_OF_day0112_0311_xgb_bal": "0.854",
+ "cic_OF_day0112_0311_threshold_f1": "0.915",
+ "cic_OF_day0112_0311_threshold_recall": "1.000",
+ "cic_OF_day0112_0311_threshold_fpr": "100.0 %",
+ "cic_OF_day0112_0311_threshold_bal": "0.500",
+ "xdom_rows": [
+  [
+   "CICDDoS2019 (OF) \u2192 Mininet phase B",
+   "Decision tree",
+   "233",
+   "0.667",
+   "1.000",
+   "62.9",
+   "0.685"
+  ],
+  [
+   "CICDDoS2019 (OF) \u2192 Mininet phase B",
+   "Logistic regression",
+   "233",
+   "0.000",
+   "0.000",
+   "0.0",
+   "0.500"
+  ],
+  [
+   "CICDDoS2019 (OF) \u2192 Mininet phase B",
+   "Random forest",
+   "233",
+   "0.800",
+   "0.667",
+   "0.0",
+   "0.833"
+  ],
+  [
+   "CICDDoS2019 (OF) \u2192 Mininet phase B",
+   "XGBoost",
+   "233",
+   "0.667",
+   "1.000",
+   "62.9",
+   "0.685"
+  ],
+  [
+   "CICDDoS2019 (OF) \u2192 Mininet phase B",
+   "Static threshold",
+   "233",
+   "0.557",
+   "1.000",
+   "100.0",
+   "0.500"
+  ],
+  [
+   "Mininet phase A \u2192 CICDDoS2019 (OF)",
+   "Decision tree",
+   "889321",
+   "0.000",
+   "0.000",
+   "0.0",
+   "0.500"
+  ],
+  [
+   "Mininet phase A \u2192 CICDDoS2019 (OF)",
+   "Logistic regression",
+   "889321",
+   "0.074",
+   "0.038",
+   "1.8",
+   "0.510"
+  ],
+  [
+   "Mininet phase A \u2192 CICDDoS2019 (OF)",
+   "Random forest",
+   "889321",
+   "0.000",
+   "0.000",
+   "0.0",
+   "0.500"
+  ],
+  [
+   "Mininet phase A \u2192 CICDDoS2019 (OF)",
+   "XGBoost",
+   "889321",
+   "0.000",
+   "0.000",
+   "0.0",
+   "0.500"
+  ],
+  [
+   "Mininet phase A \u2192 CICDDoS2019 (OF)",
+   "Static threshold",
+   "889321",
+   "0.879",
+   "0.864",
+   "69.0",
+   "0.587"
+  ],
+  [
+   "Mininet A \u2192 Mininet B (reference)",
+   "Decision tree",
+   "233",
+   "0.857",
+   "0.900",
+   "12.6",
+   "0.887"
+  ],
+  [
+   "Mininet A \u2192 Mininet B (reference)",
+   "Logistic regression",
+   "233",
+   "0.769",
+   "0.833",
+   "21.0",
+   "0.812"
+  ],
+  [
+   "Mininet A \u2192 Mininet B (reference)",
+   "Random forest",
+   "233",
+   "0.862",
+   "0.900",
+   "11.9",
+   "0.891"
+  ],
+  [
+   "Mininet A \u2192 Mininet B (reference)",
+   "XGBoost",
+   "233",
+   "0.888",
+   "0.922",
+   "9.8",
+   "0.912"
+  ],
+  [
+   "Mininet A \u2192 Mininet B (reference)",
+   "Static threshold",
+   "233",
+   "0.796",
+   "1.000",
+   "32.2",
+   "0.839"
+  ]
+ ],
+ "xdom_CIC_MininetB_dt_bal": "0.685",
+ "xdom_CIC_MininetB_dt_f1": "0.667",
+ "xdom_CIC_MininetB_lr_bal": "0.500",
+ "xdom_CIC_MininetB_lr_f1": "0.000",
+ "xdom_CIC_MininetB_rf_bal": "0.833",
+ "xdom_CIC_MininetB_rf_f1": "0.800",
+ "xdom_CIC_MininetB_xgb_bal": "0.685",
+ "xdom_CIC_MininetB_xgb_f1": "0.667",
+ "xdom_CIC_MininetB_threshold_bal": "0.500",
+ "xdom_CIC_MininetB_threshold_f1": "0.557",
+ "xdom_MininetA_CIC_dt_bal": "0.500",
+ "xdom_MininetA_CIC_dt_f1": "0.000",
+ "xdom_MininetA_CIC_lr_bal": "0.510",
+ "xdom_MininetA_CIC_lr_f1": "0.074",
+ "xdom_MininetA_CIC_rf_bal": "0.500",
+ "xdom_MininetA_CIC_rf_f1": "0.000",
+ "xdom_MininetA_CIC_xgb_bal": "0.500",
+ "xdom_MininetA_CIC_xgb_f1": "0.000",
+ "xdom_MininetA_CIC_threshold_bal": "0.587",
+ "xdom_MininetA_CIC_threshold_f1": "0.879",
+ "xdom_MininetA_MininetB_dt_bal": "0.887",
+ "xdom_MininetA_MininetB_dt_f1": "0.857",
+ "xdom_MininetA_MininetB_lr_bal": "0.812",
+ "xdom_MininetA_MininetB_lr_f1": "0.769",
+ "xdom_MininetA_MininetB_rf_bal": "0.891",
+ "xdom_MininetA_MininetB_rf_f1": "0.862",
+ "xdom_MininetA_MininetB_xgb_bal": "0.912",
+ "xdom_MininetA_MininetB_xgb_f1": "0.888",
+ "xdom_MininetA_MininetB_threshold_bal": "0.839",
+ "xdom_MininetA_MininetB_threshold_f1": "0.796",
+ "seen_syn_low": "102",
+ "sent_syn_low": "50",
+ "seen_syn_medium": "993",
+ "sent_syn_medium": "491",
+ "seen_syn_high": "8509",
+ "sent_syn_high": "4583",
+ "seen_udp_low": "53",
+ "sent_udp_low": "50",
+ "seen_udp_medium": "494",
+ "sent_udp_medium": "481",
+ "seen_udp_high": "2259",
+ "sent_udp_high": "4465",
+ "seen_icmp_low": "53",
+ "sent_icmp_low": "50",
+ "seen_icmp_medium": "486",
+ "sent_icmp_medium": "479",
+ "seen_icmp_high": "2258",
+ "sent_icmp_high": "4578",
+ "hping_rows": [
+  [
+   "SYN low",
+   "50",
+   "50",
+   "102",
+   "15"
+  ],
+  [
+   "SYN medium",
+   "500",
+   "491",
+   "993",
+   "15"
+  ],
+  [
+   "SYN high",
+   "5000",
+   "4583",
+   "8509",
+   "15"
+  ],
+  [
+   "UDP low",
+   "50",
+   "50",
+   "53",
+   "15"
+  ],
+  [
+   "UDP medium",
+   "500",
+   "481",
+   "494",
+   "15"
+  ],
+  [
+   "UDP high",
+   "5000",
+   "4465",
+   "2259",
+   "15"
+  ],
+  [
+   "ICMP low",
+   "50",
+   "50",
+   "53",
+   "15"
+  ],
+  [
+   "ICMP medium",
+   "500",
+   "479",
+   "486",
+   "15"
+  ],
+  [
+   "ICMP high",
+   "5000",
+   "4578",
+   "2258",
+   "15"
+  ]
+ ]
+}

@@ -1,0 +1,25 @@
+{
+	"start":	{
+		"connected":	[],
+		"version":	"iperf 3.16",
+		"system_info":	"Linux ac68079a3f09 7.3.0-4-cachyos #1 SMP PREEMPT_DYNAMIC Fri, 23 Oct 2026 15:03:58 +0000 x86_64",
+		"timestamp":	{
+			"time":	"Wed, 28 Oct 2026 12:32:27 GMT",
+			"timesecs":	1793190747
+		},
+		"connecting_to":	{
+			"host":	"10.0.0.100",
+			"port":	5202
+		},
+		"cookie":	"pkrdohnf77rmyza3b7w5s2c2tbe2g5mddqfz",
+		"target_bitrate":	1000000,
+		"fq_rate":	0,
+		"sock_bufsize":	0,
+		"sndbuf_actual":	212992,
+		"rcvbuf_actual":	212992
+	},
+	"intervals":	[],
+	"end":	{
+	},
+	"error":	"unable to read from stream socket: Resource temporarily unavailable"
+}

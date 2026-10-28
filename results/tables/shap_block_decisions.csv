@@ -1,0 +1,7 @@
+detector,top1_feature,blocks,share
+dt,avg_pkt_size,90,0.6666666666666666
+dt,bps,45,0.3333333333333333
+threshold,pps,580,1.0
+xgb,frac_tcp,214,0.6484848484848484
+xgb,avg_pkt_size,112,0.3393939393939394
+xgb,bps,4,0.012121212121212121

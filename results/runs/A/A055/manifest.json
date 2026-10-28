@@ -1,0 +1,49 @@
+{
+  "run_id": "A055",
+  "seed": 1055,
+  "condition": "train",
+  "rep": 0,
+  "mode": "none",
+  "attack": {
+    "type": "udp",
+    "pps": 7593
+  },
+  "benign_load": "high",
+  "link_profile": "wan",
+  "link": {
+    "bw": 10,
+    "delay_ms": 20,
+    "loss": 1.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 10,
+  "controller": {
+    "active_detector": "none",
+    "shadow": false
+  },
+  "status": "done",
+  "attacks": [
+    {
+      "host": "a1",
+      "ip": "10.0.0.201",
+      "start": 1793190249.39367,
+      "end": 1793190279.3671582
+    },
+    {
+      "host": "a2",
+      "ip": "10.0.0.202",
+      "start": 1793190249.498624,
+      "end": 1793190279.3671696
+    },
+    {
+      "host": "a3",
+      "ip": "10.0.0.203",
+      "start": 1793190249.6696913,
+      "end": 1793190279.3671756
+    }
+  ],
+  "t0": 1793190239.367059,
+  "t_end": 1793190291.367193
+}

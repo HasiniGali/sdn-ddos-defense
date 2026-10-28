@@ -1,0 +1,26 @@
+{
+  "run_id": "B-udp-medium-r1-dt",
+  "seed": 5041,
+  "condition": "udp-medium",
+  "rep": 1,
+  "mode": "dt",
+  "attack": {
+    "type": "udp",
+    "pps": 500
+  },
+  "benign_load": "medium",
+  "link_profile": "default",
+  "link": {
+    "bw": 10,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "dt",
+    "shadow": true
+  }
+}

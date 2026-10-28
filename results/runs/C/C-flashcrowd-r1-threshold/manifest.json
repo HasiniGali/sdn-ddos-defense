@@ -1,0 +1,27 @@
+{
+  "run_id": "C-flashcrowd-r1-threshold",
+  "seed": 7121,
+  "condition": "flashcrowd",
+  "rep": 1,
+  "mode": "threshold",
+  "attack": null,
+  "benign_load": "high",
+  "link_profile": "default",
+  "link": {
+    "bw": 10,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "threshold",
+    "shadow": true
+  },
+  "status": "done",
+  "attacks": [],
+  "t0": 1793197891.6159434,
+  "t_end": 1793197952.6162462
+}

@@ -1,0 +1,26 @@
+{
+  "run_id": "A028",
+  "seed": 1028,
+  "condition": "train",
+  "rep": 0,
+  "mode": "none",
+  "attack": {
+    "type": "syn",
+    "pps": 34
+  },
+  "benign_load": "high",
+  "link_profile": "wan",
+  "link": {
+    "bw": 10,
+    "delay_ms": 20,
+    "loss": 1.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 10,
+  "controller": {
+    "active_detector": "none",
+    "shadow": false
+  }
+}

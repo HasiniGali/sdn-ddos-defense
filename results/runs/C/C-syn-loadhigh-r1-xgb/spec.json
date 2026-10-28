@@ -1,0 +1,26 @@
+{
+  "run_id": "C-syn-loadhigh-r1-xgb",
+  "seed": 7001,
+  "condition": "syn-loadhigh",
+  "rep": 1,
+  "mode": "xgb",
+  "attack": {
+    "type": "syn",
+    "pps": 500
+  },
+  "benign_load": "high",
+  "link_profile": "default",
+  "link": {
+    "bw": 10,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "xgb",
+    "shadow": true
+  }
+}

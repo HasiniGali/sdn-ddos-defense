@@ -1,0 +1,26 @@
+{
+  "run_id": "C-icmp-large-r0-xgb",
+  "seed": 7110,
+  "condition": "icmp-large",
+  "rep": 0,
+  "mode": "xgb",
+  "attack": {
+    "type": "icmp",
+    "pps": 500
+  },
+  "benign_load": "medium",
+  "link_profile": "default",
+  "link": {
+    "bw": 10,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "large",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "xgb",
+    "shadow": true
+  }
+}

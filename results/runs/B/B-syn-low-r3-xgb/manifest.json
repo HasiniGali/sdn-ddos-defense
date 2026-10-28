@@ -1,0 +1,49 @@
+{
+  "run_id": "B-syn-low-r3-xgb",
+  "seed": 5003,
+  "condition": "syn-low",
+  "rep": 3,
+  "mode": "xgb",
+  "attack": {
+    "type": "syn",
+    "pps": 50
+  },
+  "benign_load": "medium",
+  "link_profile": "default",
+  "link": {
+    "bw": 10,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "xgb",
+    "shadow": true
+  },
+  "status": "done",
+  "attacks": [
+    {
+      "host": "a1",
+      "ip": "10.0.0.201",
+      "start": 1793192537.100415,
+      "end": 1793192567.0516763
+    },
+    {
+      "host": "a2",
+      "ip": "10.0.0.202",
+      "start": 1793192537.3276637,
+      "end": 1793192567.0517523
+    },
+    {
+      "host": "a3",
+      "ip": "10.0.0.203",
+      "start": 1793192537.415186,
+      "end": 1793192567.0517805
+    }
+  ],
+  "t0": 1793192527.0506704,
+  "t_end": 1793192584.0507824
+}

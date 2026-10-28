@@ -1,0 +1,49 @@
+{
+  "run_id": "B-syn-low-r0-threshold",
+  "seed": 5000,
+  "condition": "syn-low",
+  "rep": 0,
+  "mode": "threshold",
+  "attack": {
+    "type": "syn",
+    "pps": 50
+  },
+  "benign_load": "medium",
+  "link_profile": "default",
+  "link": {
+    "bw": 10,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "threshold",
+    "shadow": true
+  },
+  "status": "done",
+  "attacks": [
+    {
+      "host": "a1",
+      "ip": "10.0.0.201",
+      "start": 1793194080.377046,
+      "end": 1793194110.3054385
+    },
+    {
+      "host": "a2",
+      "ip": "10.0.0.202",
+      "start": 1793194080.6176007,
+      "end": 1793194110.3054705
+    },
+    {
+      "host": "a3",
+      "ip": "10.0.0.203",
+      "start": 1793194080.7581584,
+      "end": 1793194110.3054857
+    }
+  ],
+  "t0": 1793194070.3025634,
+  "t_end": 1793194127.304635
+}

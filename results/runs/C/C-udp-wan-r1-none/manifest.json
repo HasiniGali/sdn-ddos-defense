@@ -1,0 +1,49 @@
+{
+  "run_id": "C-udp-wan-r1-none",
+  "seed": 7061,
+  "condition": "udp-wan",
+  "rep": 1,
+  "mode": "none",
+  "attack": {
+    "type": "udp",
+    "pps": 500
+  },
+  "benign_load": "medium",
+  "link_profile": "wan",
+  "link": {
+    "bw": 10,
+    "delay_ms": 20,
+    "loss": 1.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "none",
+    "shadow": true
+  },
+  "status": "done",
+  "attacks": [
+    {
+      "host": "a1",
+      "ip": "10.0.0.201",
+      "start": 1793196040.567669,
+      "end": 1793196070.4599214
+    },
+    {
+      "host": "a2",
+      "ip": "10.0.0.202",
+      "start": 1793196040.6363752,
+      "end": 1793196070.4599624
+    },
+    {
+      "host": "a3",
+      "ip": "10.0.0.203",
+      "start": 1793196040.7141945,
+      "end": 1793196070.4604254
+    }
+  ],
+  "t0": 1793196030.4593356,
+  "t_end": 1793196091.4594574
+}

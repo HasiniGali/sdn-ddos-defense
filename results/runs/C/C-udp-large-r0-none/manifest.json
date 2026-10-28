@@ -1,0 +1,55 @@
+{
+  "run_id": "C-udp-large-r0-none",
+  "seed": 7070,
+  "condition": "udp-large",
+  "rep": 0,
+  "mode": "none",
+  "attack": {
+    "type": "udp",
+    "pps": 500
+  },
+  "benign_load": "medium",
+  "link_profile": "default",
+  "link": {
+    "bw": 10,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "large",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "none",
+    "shadow": true
+  },
+  "status": "done",
+  "attacks": [
+    {
+      "host": "a1",
+      "ip": "10.0.0.201",
+      "start": 1793199287.3319206,
+      "end": 1793199317.1420252
+    },
+    {
+      "host": "a2",
+      "ip": "10.0.0.202",
+      "start": 1793199287.5821476,
+      "end": 1793199317.142044
+    },
+    {
+      "host": "a3",
+      "ip": "10.0.0.203",
+      "start": 1793199287.8672519,
+      "end": 1793199317.1420543
+    },
+    {
+      "host": "a4",
+      "ip": "10.0.0.204",
+      "start": 1793199287.9025931,
+      "end": 1793199317.1420615
+    }
+  ],
+  "t0": 1793199277.141899,
+  "t_end": 1793199338.1419826
+}

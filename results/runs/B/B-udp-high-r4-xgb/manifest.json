@@ -1,0 +1,49 @@
+{
+  "run_id": "B-udp-high-r4-xgb",
+  "seed": 5054,
+  "condition": "udp-high",
+  "rep": 4,
+  "mode": "xgb",
+  "attack": {
+    "type": "udp",
+    "pps": 5000
+  },
+  "benign_load": "medium",
+  "link_profile": "default",
+  "link": {
+    "bw": 10,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "xgb",
+    "shadow": true
+  },
+  "status": "done",
+  "attacks": [
+    {
+      "host": "a1",
+      "ip": "10.0.0.201",
+      "start": 1793195492.3167803,
+      "end": 1793195522.0847485
+    },
+    {
+      "host": "a2",
+      "ip": "10.0.0.202",
+      "start": 1793195492.4587219,
+      "end": 1793195522.0848362
+    },
+    {
+      "host": "a3",
+      "ip": "10.0.0.203",
+      "start": 1793195492.670384,
+      "end": 1793195522.0848475
+    }
+  ],
+  "t0": 1793195482.0827234,
+  "t_end": 1793195543.0828547
+}

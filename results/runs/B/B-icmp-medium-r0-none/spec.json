@@ -1,0 +1,26 @@
+{
+  "run_id": "B-icmp-medium-r0-none",
+  "seed": 5070,
+  "condition": "icmp-medium",
+  "rep": 0,
+  "mode": "none",
+  "attack": {
+    "type": "icmp",
+    "pps": 500
+  },
+  "benign_load": "medium",
+  "link_profile": "default",
+  "link": {
+    "bw": 10,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "none",
+    "shadow": true
+  }
+}

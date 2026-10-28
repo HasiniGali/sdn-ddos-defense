@@ -1,0 +1,49 @@
+{
+  "run_id": "C-icmp-wan-r1-none",
+  "seed": 7101,
+  "condition": "icmp-wan",
+  "rep": 1,
+  "mode": "none",
+  "attack": {
+    "type": "icmp",
+    "pps": 500
+  },
+  "benign_load": "medium",
+  "link_profile": "wan",
+  "link": {
+    "bw": 10,
+    "delay_ms": 20,
+    "loss": 1.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "none",
+    "shadow": true
+  },
+  "status": "done",
+  "attacks": [
+    {
+      "host": "a1",
+      "ip": "10.0.0.201",
+      "start": 1793197645.0677583,
+      "end": 1793197674.9787915
+    },
+    {
+      "host": "a2",
+      "ip": "10.0.0.202",
+      "start": 1793197645.2373195,
+      "end": 1793197674.9788013
+    },
+    {
+      "host": "a3",
+      "ip": "10.0.0.203",
+      "start": 1793197645.4830368,
+      "end": 1793197674.9788055
+    }
+  ],
+  "t0": 1793197634.978689,
+  "t_end": 1793197695.9787617
+}

@@ -1,0 +1,55 @@
+{
+  "run_id": "A006",
+  "seed": 1006,
+  "condition": "train",
+  "rep": 0,
+  "mode": "none",
+  "attack": {
+    "type": "syn",
+    "pps": 2791
+  },
+  "benign_load": "high",
+  "link_profile": "default",
+  "link": {
+    "bw": 10,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "large",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 10,
+  "controller": {
+    "active_detector": "none",
+    "shadow": false
+  },
+  "status": "done",
+  "attacks": [
+    {
+      "host": "a1",
+      "ip": "10.0.0.201",
+      "start": 1793190469.2990692,
+      "end": 1793190499.1945815
+    },
+    {
+      "host": "a2",
+      "ip": "10.0.0.202",
+      "start": 1793190469.3681452,
+      "end": 1793190499.194592
+    },
+    {
+      "host": "a3",
+      "ip": "10.0.0.203",
+      "start": 1793190469.3722086,
+      "end": 1793190499.1945977
+    },
+    {
+      "host": "a4",
+      "ip": "10.0.0.204",
+      "start": 1793190469.651971,
+      "end": 1793190499.194602
+    }
+  ],
+  "t0": 1793190459.1944847,
+  "t_end": 1793190511.19463
+}

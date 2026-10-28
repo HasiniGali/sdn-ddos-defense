@@ -1,0 +1,49 @@
+{
+  "run_id": "C-syn-bw50-r4-xgb",
+  "seed": 7014,
+  "condition": "syn-bw50",
+  "rep": 4,
+  "mode": "xgb",
+  "attack": {
+    "type": "syn",
+    "pps": 500
+  },
+  "benign_load": "medium",
+  "link_profile": "bw50",
+  "link": {
+    "bw": 50,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "xgb",
+    "shadow": true
+  },
+  "status": "done",
+  "attacks": [
+    {
+      "host": "a1",
+      "ip": "10.0.0.201",
+      "start": 1793198382.5143409,
+      "end": 1793198412.4958117
+    },
+    {
+      "host": "a2",
+      "ip": "10.0.0.202",
+      "start": 1793198382.5736182,
+      "end": 1793198412.4958282
+    },
+    {
+      "host": "a3",
+      "ip": "10.0.0.203",
+      "start": 1793198382.7682571,
+      "end": 1793198412.4958346
+    }
+  ],
+  "t0": 1793198372.4957035,
+  "t_end": 1793198433.4957926
+}

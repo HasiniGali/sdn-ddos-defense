@@ -1,0 +1,23 @@
+{
+  "run_id": "A066",
+  "seed": 1066,
+  "condition": "train-benign",
+  "rep": 0,
+  "mode": "none",
+  "attack": null,
+  "benign_load": "low",
+  "link_profile": "default",
+  "link": {
+    "bw": 10,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 10,
+  "controller": {
+    "active_detector": "none",
+    "shadow": false
+  }
+}

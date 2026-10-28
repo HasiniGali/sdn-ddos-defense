@@ -1,0 +1,55 @@
+{
+  "run_id": "C-syn-large-r2-none",
+  "seed": 7032,
+  "condition": "syn-large",
+  "rep": 2,
+  "mode": "none",
+  "attack": {
+    "type": "syn",
+    "pps": 500
+  },
+  "benign_load": "medium",
+  "link_profile": "default",
+  "link": {
+    "bw": 10,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "large",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "none",
+    "shadow": true
+  },
+  "status": "done",
+  "attacks": [
+    {
+      "host": "a1",
+      "ip": "10.0.0.201",
+      "start": 1793198888.1472042,
+      "end": 1793198917.8798826
+    },
+    {
+      "host": "a2",
+      "ip": "10.0.0.202",
+      "start": 1793198888.313236,
+      "end": 1793198917.879895
+    },
+    {
+      "host": "a3",
+      "ip": "10.0.0.203",
+      "start": 1793198888.4122844,
+      "end": 1793198917.8799007
+    },
+    {
+      "host": "a4",
+      "ip": "10.0.0.204",
+      "start": 1793198888.4372044,
+      "end": 1793198917.879906
+    }
+  ],
+  "t0": 1793198877.8798044,
+  "t_end": 1793198938.879977
+}

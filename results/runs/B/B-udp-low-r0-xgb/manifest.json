@@ -1,0 +1,49 @@
+{
+  "run_id": "B-udp-low-r0-xgb",
+  "seed": 5030,
+  "condition": "udp-low",
+  "rep": 0,
+  "mode": "xgb",
+  "attack": {
+    "type": "udp",
+    "pps": 50
+  },
+  "benign_load": "medium",
+  "link_profile": "default",
+  "link": {
+    "bw": 10,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "xgb",
+    "shadow": true
+  },
+  "status": "done",
+  "attacks": [
+    {
+      "host": "a1",
+      "ip": "10.0.0.201",
+      "start": 1793195241.4204545,
+      "end": 1793195271.3386266
+    },
+    {
+      "host": "a2",
+      "ip": "10.0.0.202",
+      "start": 1793195241.6903434,
+      "end": 1793195271.3387496
+    },
+    {
+      "host": "a3",
+      "ip": "10.0.0.203",
+      "start": 1793195241.8432493,
+      "end": 1793195271.3388298
+    }
+  ],
+  "t0": 1793195231.3364244,
+  "t_end": 1793195292.3365042
+}

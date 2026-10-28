@@ -1,0 +1,27 @@
+{
+  "run_id": "C-flashcrowd-r4-none",
+  "seed": 7124,
+  "condition": "flashcrowd",
+  "rep": 4,
+  "mode": "none",
+  "attack": null,
+  "benign_load": "high",
+  "link_profile": "default",
+  "link": {
+    "bw": 10,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "none",
+    "shadow": true
+  },
+  "status": "done",
+  "attacks": [],
+  "t0": 1793195945.4658751,
+  "t_end": 1793196006.4659934
+}

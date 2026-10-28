@@ -1,0 +1,49 @@
+{
+  "run_id": "C-syn-loadhigh-r3-xgb",
+  "seed": 7003,
+  "condition": "syn-loadhigh",
+  "rep": 3,
+  "mode": "xgb",
+  "attack": {
+    "type": "syn",
+    "pps": 500
+  },
+  "benign_load": "high",
+  "link_profile": "default",
+  "link": {
+    "bw": 10,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "xgb",
+    "shadow": true
+  },
+  "status": "done",
+  "attacks": [
+    {
+      "host": "a1",
+      "ip": "10.0.0.201",
+      "start": 1793198547.1885042,
+      "end": 1793198576.9900792
+    },
+    {
+      "host": "a2",
+      "ip": "10.0.0.202",
+      "start": 1793198547.2265055,
+      "end": 1793198576.9900918
+    },
+    {
+      "host": "a3",
+      "ip": "10.0.0.203",
+      "start": 1793198547.5136552,
+      "end": 1793198576.9900985
+    }
+  ],
+  "t0": 1793198536.9899952,
+  "t_end": 1793198597.9900916
+}

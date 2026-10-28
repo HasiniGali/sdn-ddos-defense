@@ -1,0 +1,49 @@
+{
+  "run_id": "C-syn-bw50-r2-threshold",
+  "seed": 7012,
+  "condition": "syn-bw50",
+  "rep": 2,
+  "mode": "threshold",
+  "attack": {
+    "type": "syn",
+    "pps": 500
+  },
+  "benign_load": "medium",
+  "link_profile": "bw50",
+  "link": {
+    "bw": 50,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "threshold",
+    "shadow": true
+  },
+  "status": "done",
+  "attacks": [
+    {
+      "host": "a1",
+      "ip": "10.0.0.201",
+      "start": 1793198302.178461,
+      "end": 1793198332.038756
+    },
+    {
+      "host": "a2",
+      "ip": "10.0.0.202",
+      "start": 1793198302.4744208,
+      "end": 1793198332.038769
+    },
+    {
+      "host": "a3",
+      "ip": "10.0.0.203",
+      "start": 1793198302.7458675,
+      "end": 1793198332.038774
+    }
+  ],
+  "t0": 1793198292.0386455,
+  "t_end": 1793198353.0387228
+}

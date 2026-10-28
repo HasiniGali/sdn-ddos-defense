@@ -1,0 +1,49 @@
+{
+  "run_id": "C-icmp-bw50-r2-threshold",
+  "seed": 7092,
+  "condition": "icmp-bw50",
+  "rep": 2,
+  "mode": "threshold",
+  "attack": {
+    "type": "icmp",
+    "pps": 500
+  },
+  "benign_load": "medium",
+  "link_profile": "bw50",
+  "link": {
+    "bw": 50,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "threshold",
+    "shadow": true
+  },
+  "status": "done",
+  "attacks": [
+    {
+      "host": "a1",
+      "ip": "10.0.0.201",
+      "start": 1793199620.851486,
+      "end": 1793199650.7481737
+    },
+    {
+      "host": "a2",
+      "ip": "10.0.0.202",
+      "start": 1793199621.0436285,
+      "end": 1793199650.7481885
+    },
+    {
+      "host": "a3",
+      "ip": "10.0.0.203",
+      "start": 1793199621.329536,
+      "end": 1793199650.7481945
+    }
+  ],
+  "t0": 1793199610.748022,
+  "t_end": 1793199671.748156
+}

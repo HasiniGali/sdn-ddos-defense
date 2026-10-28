@@ -1,0 +1,49 @@
+{
+  "run_id": "C-syn-wan-r4-threshold",
+  "seed": 7024,
+  "condition": "syn-wan",
+  "rep": 4,
+  "mode": "threshold",
+  "attack": {
+    "type": "syn",
+    "pps": 500
+  },
+  "benign_load": "medium",
+  "link_profile": "wan",
+  "link": {
+    "bw": 10,
+    "delay_ms": 20,
+    "loss": 1.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "threshold",
+    "shadow": true
+  },
+  "status": "done",
+  "attacks": [
+    {
+      "host": "a1",
+      "ip": "10.0.0.201",
+      "start": 1793198136.2897542,
+      "end": 1793198166.0354683
+    },
+    {
+      "host": "a2",
+      "ip": "10.0.0.202",
+      "start": 1793198136.4040282,
+      "end": 1793198166.0354805
+    },
+    {
+      "host": "a3",
+      "ip": "10.0.0.203",
+      "start": 1793198136.6274865,
+      "end": 1793198166.0354857
+    }
+  ],
+  "t0": 1793198126.0353668,
+  "t_end": 1793198187.0354404
+}

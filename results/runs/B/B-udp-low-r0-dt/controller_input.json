@@ -1,0 +1,15 @@
+{
+  "run_dir": "/work/results/runs/B/B-udp-low-r0-dt",
+  "poll_interval": 2.0,
+  "flow_idle_timeout": 10,
+  "active_detector": "dt",
+  "shadow": true,
+  "model_path": "models/detectors.joblib",
+  "confirm_intervals": 2,
+  "min_block_s": 10.0,
+  "quiet_pps": 20.0,
+  "quiet_intervals": 2,
+  "protected_ips": [
+    "10.0.0.100"
+  ]
+}

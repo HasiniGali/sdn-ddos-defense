@@ -1,0 +1,26 @@
+{
+  "run_id": "B-syn-low-r1-none",
+  "seed": 5001,
+  "condition": "syn-low",
+  "rep": 1,
+  "mode": "none",
+  "attack": {
+    "type": "syn",
+    "pps": 50
+  },
+  "benign_load": "medium",
+  "link_profile": "default",
+  "link": {
+    "bw": 10,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "none",
+    "shadow": true
+  }
+}

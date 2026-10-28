@@ -1,0 +1,49 @@
+{
+  "run_id": "B-udp-medium-r1-none",
+  "seed": 5041,
+  "condition": "udp-medium",
+  "rep": 1,
+  "mode": "none",
+  "attack": {
+    "type": "udp",
+    "pps": 500
+  },
+  "benign_load": "medium",
+  "link_profile": "default",
+  "link": {
+    "bw": 10,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "none",
+    "shadow": true
+  },
+  "status": "done",
+  "attacks": [
+    {
+      "host": "a1",
+      "ip": "10.0.0.201",
+      "start": 1793194994.939641,
+      "end": 1793195024.7264102
+    },
+    {
+      "host": "a2",
+      "ip": "10.0.0.202",
+      "start": 1793194995.100546,
+      "end": 1793195024.7264237
+    },
+    {
+      "host": "a3",
+      "ip": "10.0.0.203",
+      "start": 1793194995.1852825,
+      "end": 1793195024.7264304
+    }
+  ],
+  "t0": 1793194984.726302,
+  "t_end": 1793195045.7263772
+}

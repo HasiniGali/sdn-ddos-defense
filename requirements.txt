@@ -1,0 +1,12 @@
+os-ken
+numpy
+pandas
+pyarrow
+scikit-learn
+xgboost
+shap
+joblib
+psutil
+scipy
+matplotlib
+pytest

@@ -1,0 +1,49 @@
+{
+  "run_id": "B-udp-high-r2-dt",
+  "seed": 5052,
+  "condition": "udp-high",
+  "rep": 2,
+  "mode": "dt",
+  "attack": {
+    "type": "udp",
+    "pps": 5000
+  },
+  "benign_load": "medium",
+  "link_profile": "default",
+  "link": {
+    "bw": 10,
+    "delay_ms": 2,
+    "loss": 0.0
+  },
+  "size": "small",
+  "warm_s": 10,
+  "attack_s": 30,
+  "tail_s": 15,
+  "controller": {
+    "active_detector": "dt",
+    "shadow": true
+  },
+  "status": "done",
+  "attacks": [
+    {
+      "host": "a1",
+      "ip": "10.0.0.201",
+      "start": 1793193487.266154,
+      "end": 1793193517.1487072
+    },
+    {
+      "host": "a2",
+      "ip": "10.0.0.202",
+      "start": 1793193487.3085234,
+      "end": 1793193517.148733
+    },
+    {
+      "host": "a3",
+      "ip": "10.0.0.203",
+      "start": 1793193487.4988897,
+      "end": 1793193517.1487427
+    }
+  ],
+  "t0": 1793193477.148496,
+  "t_end": 1793193534.1489959
+}

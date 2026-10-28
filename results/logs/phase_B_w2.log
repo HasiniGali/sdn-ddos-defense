@@ -1,0 +1,92 @@
+hostname: Temporary failure in name resolution
+45/45 runs pending
+*** Error setting resource limits. Mininet's performance may be affected.
+[1/45] B-icmp-high-r3-xgb attempt=1 ok=True 75s
+*** Error setting resource limits. Mininet's performance may be affected.
+[2/45] B-syn-high-r0-dt attempt=1 ok=True 78s
+*** Error setting resource limits. Mininet's performance may be affected.
+[3/45] B-syn-high-r1-none attempt=1 ok=True 78s
+*** Error setting resource limits. Mininet's performance may be affected.
+[4/45] B-syn-medium-r4-threshold attempt=1 ok=True 79s
+*** Error setting resource limits. Mininet's performance may be affected.
+[5/45] B-udp-medium-r2-threshold attempt=1 ok=True 79s
+*** Error setting resource limits. Mininet's performance may be affected.
+[6/45] B-icmp-low-r1-none attempt=1 ok=True 79s
+*** Error setting resource limits. Mininet's performance may be affected.
+[7/45] B-udp-medium-r3-xgb attempt=1 ok=True 78s
+*** Error setting resource limits. Mininet's performance may be affected.
+[8/45] B-icmp-high-r3-threshold attempt=1 ok=True 79s
+*** Error setting resource limits. Mininet's performance may be affected.
+[9/45] B-icmp-medium-r1-dt attempt=1 ok=True 78s
+*** Error setting resource limits. Mininet's performance may be affected.
+[10/45] B-udp-low-r3-xgb attempt=1 ok=True 78s
+*** Error setting resource limits. Mininet's performance may be affected.
+[11/45] B-udp-high-r4-none attempt=1 ok=True 78s
+*** Error setting resource limits. Mininet's performance may be affected.
+[12/45] B-udp-low-r0-dt attempt=1 ok=True 78s
+*** Error setting resource limits. Mininet's performance may be affected.
+[13/45] B-icmp-medium-r0-xgb attempt=1 ok=True 78s
+*** Error setting resource limits. Mininet's performance may be affected.
+[14/45] B-syn-medium-r0-threshold attempt=1 ok=True 79s
+*** Error setting resource limits. Mininet's performance may be affected.
+[15/45] B-udp-low-r0-none attempt=1 ok=True 83s
+*** Error setting resource limits. Mininet's performance may be affected.
+[16/45] B-syn-high-r4-xgb attempt=1 ok=True 79s
+*** Error setting resource limits. Mininet's performance may be affected.
+[17/45] B-icmp-medium-r3-threshold attempt=1 ok=True 80s
+*** Error setting resource limits. Mininet's performance may be affected.
+[18/45] B-icmp-low-r3-none attempt=1 ok=True 83s
+*** Error setting resource limits. Mininet's performance may be affected.
+[19/45] B-syn-high-r0-xgb attempt=1 ok=True 84s
+*** Error setting resource limits. Mininet's performance may be affected.
+[20/45] B-icmp-low-r1-xgb attempt=1 ok=True 83s
+*** Error setting resource limits. Mininet's performance may be affected.
+[21/45] B-udp-low-r3-none attempt=1 ok=True 85s
+*** Error setting resource limits. Mininet's performance may be affected.
+[22/45] B-icmp-medium-r0-none attempt=1 ok=True 87s
+*** Error setting resource limits. Mininet's performance may be affected.
+[23/45] B-udp-high-r4-threshold attempt=1 ok=True 85s
+*** Error setting resource limits. Mininet's performance may be affected.
+[24/45] B-udp-medium-r4-xgb attempt=1 ok=True 85s
+*** Error setting resource limits. Mininet's performance may be affected.
+[25/45] B-syn-high-r2-dt attempt=1 ok=True 84s
+*** Error setting resource limits. Mininet's performance may be affected.
+[26/45] B-icmp-high-r2-none attempt=1 ok=True 85s
+*** Error setting resource limits. Mininet's performance may be affected.
+[27/45] B-icmp-low-r3-threshold attempt=1 ok=True 89s
+*** Error setting resource limits. Mininet's performance may be affected.
+[28/45] B-icmp-medium-r1-xgb attempt=1 ok=True 85s
+*** Error setting resource limits. Mininet's performance may be affected.
+[29/45] B-syn-low-r0-none attempt=1 ok=True 84s
+*** Error setting resource limits. Mininet's performance may be affected.
+[30/45] B-icmp-high-r3-dt attempt=1 ok=True 82s
+*** Error setting resource limits. Mininet's performance may be affected.
+[31/45] B-icmp-high-r2-threshold attempt=1 ok=True 82s
+*** Error setting resource limits. Mininet's performance may be affected.
+[32/45] B-syn-low-r1-dt attempt=1 ok=True 82s
+*** Error setting resource limits. Mininet's performance may be affected.
+[33/45] B-syn-low-r3-dt attempt=1 ok=True 82s
+*** Error setting resource limits. Mininet's performance may be affected.
+[34/45] B-icmp-low-r2-xgb attempt=1 ok=True 82s
+*** Error setting resource limits. Mininet's performance may be affected.
+[35/45] B-syn-low-r2-dt attempt=1 ok=True 82s
+*** Error setting resource limits. Mininet's performance may be affected.
+[36/45] B-udp-medium-r1-none attempt=1 ok=True 82s
+*** Error setting resource limits. Mininet's performance may be affected.
+[37/45] B-icmp-low-r4-xgb attempt=1 ok=True 82s
+*** Error setting resource limits. Mininet's performance may be affected.
+[38/45] B-icmp-medium-r0-dt attempt=1 ok=True 82s
+*** Error setting resource limits. Mininet's performance may be affected.
+[39/45] B-syn-medium-r3-threshold attempt=1 ok=True 82s
+*** Error setting resource limits. Mininet's performance may be affected.
+[40/45] B-icmp-medium-r2-threshold attempt=1 ok=True 82s
+*** Error setting resource limits. Mininet's performance may be affected.
+[41/45] B-udp-high-r2-none attempt=1 ok=True 84s
+*** Error setting resource limits. Mininet's performance may be affected.
+[42/45] B-icmp-high-r1-xgb attempt=1 ok=True 87s
+*** Error setting resource limits. Mininet's performance may be affected.
+[43/45] B-icmp-low-r0-threshold attempt=1 ok=True 91s
+*** Error setting resource limits. Mininet's performance may be affected.
+[44/45] B-icmp-medium-r4-none attempt=1 ok=True 89s
+*** Error setting resource limits. Mininet's performance may be affected.
+[45/45] B-icmp-low-r2-dt attempt=1 ok=True 93s
