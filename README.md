@@ -5,7 +5,7 @@ The controller computes per-source features from OpenFlow flow counters every 2 
 scores them with several detectors, blocks attackers with drop rules on their ingress
 switch, unblocks them when they go quiet, and logs a SHAP explanation for every block.
 
-Team: Ayush Biswas (25BCE0507), Ustat Kaur (25BAI0022), Gali Hasini (25BCE2096).
+Team:  Gali Hasini (25BCE2096), Ayush Biswas (25BCE0507), Ustat Kaur (25BAI0022).
 
 ## Layout
 
